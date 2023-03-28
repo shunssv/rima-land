@@ -17,8 +17,8 @@ export default function Home() {
       </Head>
 
       <div className={`${styles.maintenanceContainer} ${inter.className}`}>
-        <p><MdRamenDining /> Currently in Production <MdRamenDining /></p>
-        <p>RIMA LAND 制作中<FaSmileWink /></p>
+        <p className={styles.text}><MdRamenDining /> Currently in Production <MdRamenDining /></p>
+        <p className={styles.text}>RIMA LAND 制作中<FaSmileWink /></p>
       </div>
 
     </>
