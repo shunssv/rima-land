@@ -1,0 +1,16 @@
+.loaderContainer {
+  background-image: linear-gradient(316deg, #f093fb 0%, #f5576c 100%);
+  inset: 0;
+  position: fixed;
+  text-align: center;
+  z-index: 99;
+  .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .text {
+      margin-top: 1em;
+    }
+  }
+}
