@@ -5,10 +5,15 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/((?!maintenance).*)',
+        source: '/',
         destination: '/maintenance',
         permanent: false,
       },
+      // {
+      //   source: '/((?!maintenance).*)',
+      //   destination: '/maintenance',
+      //   permanent: false,
+      // },
       // {
       //   source: "/maintenance",
       //   destination: "/",
