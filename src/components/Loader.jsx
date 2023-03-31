@@ -1,9 +1,6 @@
 import Image from 'next/image';
 import styles from './Loader.module.scss';
-import { Inter } from 'next/font/google';
 import { useEffect, useState } from 'react';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export function Loader() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,7 +14,7 @@ export function Loader() {
   return (
     <>
       {isLoading ? (
-        <div className={`${styles.loaderContainer} ${inter.className}`}>
+        <div className={styles.loaderContainer}>
           <div className={styles.inner}>
             <Image
               src="/loader.svg"
@@ -32,7 +29,7 @@ export function Loader() {
         </div>
       ) : (
         <div
-          className={`${styles.loaderContainer} ${inter.className} animate__animated animate__fadeOut animate__slow`}
+          className={`${styles.loaderContainer} animate__animated animate__fadeOut animate__slow`}
         >
           <div
             className={`${styles.inner} animate__animated animate__fadeOut animate__faster`}

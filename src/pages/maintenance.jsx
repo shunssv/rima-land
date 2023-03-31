@@ -1,11 +1,8 @@
 import Head from 'next/head';
 import styles from '@/styles/Maintenance.module.scss';
-import { Inter } from 'next/font/google';
 import { FaSmileWink } from 'react-icons/fa';
 import { MdRamenDining } from 'react-icons/md';
 import { Loader } from '@/components/Loader';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Maintenance() {
   return (
@@ -20,7 +17,7 @@ export default function Maintenance() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className={`${styles.maintenanceContainer} ${inter.className}`}>
+      <div className={styles.maintenanceContainer}>
         <p className={styles.text}>
           <MdRamenDining /> Currently in Production <MdRamenDining />
         </p>
