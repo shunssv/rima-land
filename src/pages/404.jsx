@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Custom404.module.scss';
 import Link from 'next/link';
+import { MdOutlineArrowRight } from 'react-icons/md';
 
 export default function Custom404() {
   return (
@@ -13,9 +14,9 @@ export default function Custom404() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <header>
+      <header className={styles.headerContainer}>
         <Link href="/">
-          <h1>RIMA LAND</h1>
+          <h1>Rima Land</h1>
         </Link>
       </header>
 
@@ -24,9 +25,10 @@ export default function Custom404() {
           <h2 className={styles.title}>
             <Image
               src="/404.png"
-              width={200}
-              height={30}
+              width={120}
+              height={78}
               alt="404 page not found"
+              className={styles.titleImage}
               priority
             />
           </h2>
@@ -36,14 +38,15 @@ export default function Custom404() {
             <br />
             URLが変更されているか、もしくはページが存在しません。
           </p>
-          <div className={styles.buttonRightArrow}>
-            <Link href="/">Keep browsing</Link>
-          </div>
+          <Link href="/" className={styles.buttonArrowRight}>
+            Keep browsing
+            <MdOutlineArrowRight className={styles.icon} />
+          </Link>
         </section>
       </div>
 
-      <footer>
-        <ul role="list">
+      <footer className={styles.footerContainer}>
+        <ul role="list" className={styles.footerLinkList}>
           <li>
             <a
               href="https://www.example.com"
@@ -55,7 +58,7 @@ export default function Custom404() {
                 width={30}
                 height={30}
                 alt="Twitter"
-                property
+                priority
               />
             </a>
           </li>
@@ -63,7 +66,7 @@ export default function Custom404() {
             <Link href="/disclamer">Disclaimer</Link>
           </li>
         </ul>
-        <small>© 2023 RIMA LAND</small>
+        <small className={styles.copyRightText}>© 2023 RIMA LAND</small>
       </footer>
     </>
   );

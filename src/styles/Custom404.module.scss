@@ -1,0 +1,60 @@
+.headerContainer {
+  padding: 2%;
+}
+
+.wrapper {
+  padding: 20% 4%;
+}
+
+.custom404Container {
+  background-color: #fff;
+  padding: 25% 4%;
+  position: relative;
+  text-align: center;
+  .title {
+    left: 0;
+    position: absolute;
+    top: -35px;
+  }
+  .text {
+    margin-bottom: 5em;
+    span {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.buttonArrowRight {
+  background-color: #d9414e;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  padding: 3% 6%;
+  position: relative;
+  text-align: center;
+  .icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.footerContainer {
+  color: #fff;
+  padding: 8% 4%;
+  text-align: center;
+  .footerLinkList {
+    column-gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12%;
+  }
+  .copyRightText {
+    font-size: 0.5rem;
+  }
+}
