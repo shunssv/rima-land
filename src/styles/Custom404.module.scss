@@ -1,3 +1,6 @@
+/*
+================ common ================
+*/
 .headerContainer {
   padding: 2%;
 }
@@ -52,9 +55,59 @@
     column-gap: 20px;
     display: flex;
     justify-content: center;
-    margin-bottom: 12%;
+    margin-bottom: 3em;
   }
   .copyRightText {
     font-size: 0.5rem;
+  }
+}
+/*
+============ SP layout only ============
+*/
+@media (max-width: 520px) {
+  .wrapper {
+    padding: 20% 4%;
+  }
+}
+
+/*
+========= Tablet and PC layout =========
+*/
+@media (min-width: 521px) {
+
+}
+
+/*
+========== Tablet layout only ==========
+*/
+@media (min-width: 521px) and (max-width: 926px) {
+  .wrapper {
+    padding: 10% 4%;
+  }
+  .custom404Container {
+    .title {
+      top: -55px;
+      .titleImage {
+        width: 200px;
+      }
+    }
+  }
+}
+
+/*
+============ PC layout only ============
+*/
+@media (min-width: 927px) {
+  .wrapper {
+    padding: 7% 4%;
+  }
+  .custom404Container {
+    padding: 10% 4%;
+    .title {
+      top: -85px;
+      .titleImage {
+        width: 250px;
+      }
+    }
   }
 }
