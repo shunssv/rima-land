@@ -2,7 +2,8 @@
 ================ common ================
 */
 .headerContainer {
-  padding: 2%;
+  color: #fff;
+  padding: 1% 2%;
 }
 
 .wrapper {
@@ -35,8 +36,8 @@
   color: #fff;
   display: block;
   margin: 0 auto;
-  max-width: 200px;
-  padding: 3% 6%;
+  max-width: 250px;
+  padding: 1em 3em;
   position: relative;
   text-align: center;
   .icon {
@@ -74,7 +75,12 @@
 ========= Tablet and PC layout =========
 */
 @media (min-width: 521px) {
-
+  .custom404Container {
+    padding: 10% 4%;
+    .titleImage {
+      width: 200px;
+    }
+  }
 }
 
 /*
@@ -87,9 +93,6 @@
   .custom404Container {
     .title {
       top: -55px;
-      .titleImage {
-        width: 200px;
-      }
     }
   }
 }
@@ -102,12 +105,16 @@
     padding: 7% 4%;
   }
   .custom404Container {
-    padding: 10% 4%;
     .title {
-      top: -85px;
-      .titleImage {
-        width: 250px;
-      }
+      top: -60px;
+      left: 10px;
+    }
+  }
+  .footerContainer {
+    padding: 8% 4% 1%;
+    .footerLinkList {
+      justify-content: flex-end;
+      margin-bottom: 0;
     }
   }
 }

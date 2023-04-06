@@ -24,7 +24,7 @@ export default function Custom404() {
         <section className={styles.custom404Container}>
           <h2 className={styles.title}>
             <Image
-              src="/404.png"
+              src="/404.svg"
               width={120}
               height={78}
               alt="404 page not found"
