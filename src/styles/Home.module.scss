@@ -5,6 +5,11 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+
+  background-image: linear-gradient(to bottom,
+    rgb(0,0,0) 0%,
+    rgb(0,0,0) 100%
+  );
 }
 
 .description {
@@ -81,7 +86,7 @@
 }
 
 .center::before {
-  background: var(--secondary-glow);
+  // background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
   height: 360px;
