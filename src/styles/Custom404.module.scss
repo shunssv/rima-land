@@ -1,0 +1,123 @@
+/*
+================ common ================
+*/
+.headerContainer {
+  color: #fff;
+  padding: 1% 2%;
+}
+
+.wrapper {
+  padding: 20% 4%;
+}
+
+.custom404Container {
+  background-color: #fff;
+  padding: 25% 4%;
+  position: relative;
+  text-align: center;
+  .title {
+    left: 0;
+    position: absolute;
+    top: -35px;
+  }
+  .text {
+    margin-bottom: 5em;
+    span {
+      display: block;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+.buttonArrowRight {
+  background-color: #d9414e;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 1em 3em;
+  position: relative;
+  text-align: center;
+  .icon {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.footerContainer {
+  color: #fff;
+  padding: 8% 4% 1%;
+  text-align: center;
+  .footerLinkList {
+    column-gap: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+  }
+  .copyRightText {
+    font-size: 0.5rem;
+  }
+}
+/*
+============ SP layout only ============
+*/
+@media (max-width: 520px) {
+  .wrapper {
+    padding: 20% 4%;
+  }
+}
+
+/*
+========= Tablet and PC layout =========
+*/
+@media (min-width: 521px) {
+  .custom404Container {
+    .titleImage {
+      width: 200px;
+    }
+    .text span {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+/*
+========== Tablet layout only ==========
+*/
+@media (min-width: 521px) and (max-width: 926px) {
+  .wrapper {
+    padding: 10% 4%;
+  }
+  .custom404Container {
+    padding: 25% 4%;
+    .title {
+      top: -55px;
+    }
+  }
+}
+
+/*
+============ PC layout only ============
+*/
+@media (min-width: 927px) {
+  .wrapper {
+    padding: 7% 4%;
+  }
+  .custom404Container {
+    padding: 10% 4%;
+    .title {
+      top: -60px;
+      left: 10px;
+    }
+  }
+  .footerContainer {
+    .footerLinkList {
+      justify-content: flex-end;
+      margin-bottom: 0;
+    }
+  }
+}
