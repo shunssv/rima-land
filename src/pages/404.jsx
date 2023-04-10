@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Custom404.module.scss';
 import Link from 'next/link';
-import { MdOutlineArrowRight } from 'react-icons/md';
+import { MdArrowForwardIos } from 'react-icons/md';
 
 export default function Custom404() {
   return (
@@ -40,7 +40,7 @@ export default function Custom404() {
           </p>
           <Link href="/" className={styles.buttonArrowRight}>
             Keep browsing
-            <MdOutlineArrowRight className={styles.icon} />
+            <MdArrowForwardIos className={styles.icon} />
           </Link>
         </section>
       </div>

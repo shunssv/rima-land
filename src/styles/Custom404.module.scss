@@ -42,7 +42,7 @@
   text-align: center;
   .icon {
     position: absolute;
-    right: 0;
+    right: 3%;
     top: 50%;
     transform: translateY(-50%);
   }
@@ -50,7 +50,7 @@
 
 .footerContainer {
   color: #fff;
-  padding: 8% 4%;
+  padding: 8% 4% 1%;
   text-align: center;
   .footerLinkList {
     column-gap: 20px;
@@ -76,9 +76,11 @@
 */
 @media (min-width: 521px) {
   .custom404Container {
-    padding: 10% 4%;
     .titleImage {
       width: 200px;
+    }
+    .text span {
+      font-size: 2.5rem;
     }
   }
 }
@@ -91,6 +93,7 @@
     padding: 10% 4%;
   }
   .custom404Container {
+    padding: 25% 4%;
     .title {
       top: -55px;
     }
@@ -105,13 +108,13 @@
     padding: 7% 4%;
   }
   .custom404Container {
+    padding: 10% 4%;
     .title {
       top: -60px;
       left: 10px;
     }
   }
   .footerContainer {
-    padding: 8% 4% 1%;
     .footerLinkList {
       justify-content: flex-end;
       margin-bottom: 0;
