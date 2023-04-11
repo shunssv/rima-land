@@ -1,6 +1,4 @@
-/*
-================ common ================
-*/
+/* ================ common ================ */
 .headerContainer {
   color: #fff;
   padding: 1% 2%;
@@ -48,32 +46,14 @@
   }
 }
 
-.footerContainer {
-  color: #fff;
-  padding: 8% 4% 1%;
-  text-align: center;
-  .footerLinkList {
-    column-gap: 20px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3em;
-  }
-  .copyRightText {
-    font-size: 0.5rem;
-  }
-}
-/*
-============ SP layout only ============
-*/
+/* ============ SP layout only ============ */
 @media (max-width: 520px) {
   .wrapper {
     padding: 20% 4%;
   }
 }
 
-/*
-========= Tablet and PC layout =========
-*/
+/* ========= Tablet and PC layout ========= */
 @media (min-width: 521px) {
   .custom404Container {
     .titleImage {
@@ -85,9 +65,7 @@
   }
 }
 
-/*
-========== Tablet layout only ==========
-*/
+/* ========== Tablet layout only ========== */
 @media (min-width: 521px) and (max-width: 926px) {
   .wrapper {
     padding: 10% 4%;
@@ -100,9 +78,7 @@
   }
 }
 
-/*
-============ PC layout only ============
-*/
+/* ============ PC layout only ============ */
 @media (min-width: 927px) {
   .wrapper {
     padding: 7% 4%;
@@ -112,12 +88,6 @@
     .title {
       top: -60px;
       left: 10px;
-    }
-  }
-  .footerContainer {
-    .footerLinkList {
-      justify-content: flex-end;
-      margin-bottom: 0;
     }
   }
 }
