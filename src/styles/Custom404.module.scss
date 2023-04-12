@@ -66,7 +66,7 @@
 }
 
 /* ========== Tablet layout only ========== */
-@media (min-width: 521px) and (max-width: 926px) {
+@media (min-width: 521px) and (max-width: 1180px) {
   .wrapper {
     padding: 10% 4%;
   }
@@ -79,7 +79,7 @@
 }
 
 /* ============ PC layout only ============ */
-@media (min-width: 927px) {
+@media (min-width: 1181px) {
   .wrapper {
     padding: 7% 4%;
   }
