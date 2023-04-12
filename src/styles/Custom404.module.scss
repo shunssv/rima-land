@@ -1,15 +1,10 @@
 /* ================ common ================ */
-.headerContainer {
-  color: #fff;
-  padding: 1% 2%;
-}
-
 .wrapper {
   padding: 20% 4%;
 }
 
 .custom404Container {
-  background-color: #fff;
+  background-color: var(--background-color-white);
   padding: 25% 4%;
   position: relative;
   text-align: center;
@@ -30,8 +25,8 @@
 }
 
 .buttonArrowRight {
-  background-color: #d9414e;
-  color: #fff;
+  background-color: var(--background-color-red);
+  color: var(--font-color-white);
   display: block;
   margin: 0 auto;
   max-width: 250px;
