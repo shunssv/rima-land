@@ -1,6 +1,17 @@
-/* ================ common ================ */
+@use 'media-query' as m;
+
 .wrapper {
   padding: 20% 4%;
+
+  @include m.mq(sp) {
+    padding: 20% 4%;
+  }
+  @include m.mq(tab) {
+    padding: 10% 4%;
+  }
+  @include m.mq(pc) {
+    padding: 7% 4%;
+  }
 }
 
 .custom404Container {
@@ -22,6 +33,28 @@
       margin-bottom: 0.5em;
     }
   }
+
+  @include m.mq(tabAndPc) {
+    .titleImage {
+      width: 200px;
+    }
+    .text span {
+      font-size: 2.5rem;
+    }
+  }
+  @include m.mq(tab) {
+    padding: 25% 4%;
+    .title {
+      top: -55px;
+    }
+  }
+  @include m.mq(pc) {
+    padding: 10% 4%;
+    .title {
+      top: -60px;
+      left: 10px;
+    }
+  }
 }
 
 .buttonArrowRight {
@@ -38,51 +71,5 @@
     right: 3%;
     top: 50%;
     transform: translateY(-50%);
-  }
-}
-
-/* ============ SP layout only ============ */
-@media (max-width: 520px) {
-  .wrapper {
-    padding: 20% 4%;
-  }
-}
-
-/* ========= Tablet and PC layout ========= */
-@media (min-width: 521px) {
-  .custom404Container {
-    .titleImage {
-      width: 200px;
-    }
-    .text span {
-      font-size: 2.5rem;
-    }
-  }
-}
-
-/* ========== Tablet layout only ========== */
-@media (min-width: 521px) and (max-width: 1180px) {
-  .wrapper {
-    padding: 10% 4%;
-  }
-  .custom404Container {
-    padding: 25% 4%;
-    .title {
-      top: -55px;
-    }
-  }
-}
-
-/* ============ PC layout only ============ */
-@media (min-width: 1181px) {
-  .wrapper {
-    padding: 7% 4%;
-  }
-  .custom404Container {
-    padding: 10% 4%;
-    .title {
-      top: -60px;
-      left: 10px;
-    }
   }
 }
