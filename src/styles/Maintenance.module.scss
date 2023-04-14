@@ -1,9 +1,18 @@
 .maintenanceContainer {
-  color: var(--font-color-white);
+  background: url('../assets/maintenance-bg.svg') center / cover no-repeat;
   inset: 0;
-  padding-top: 15vh;
+  padding-top: 20vh;
   position: fixed;
   text-align: center;
+  .maintenanceInner {
+    background-color: var(--background-color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 7px rgb(99, 99, 99, 0.6);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2em;
+    width: 80%;
+  }
   .text {
     display: flex;
     gap: 0.5em;

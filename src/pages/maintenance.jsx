@@ -16,13 +16,15 @@ export default function Maintenance() {
       </Head>
 
       <div className={styles.maintenanceContainer}>
-        <p className={styles.text}>
-          <MdRamenDining /> Currently in Production <MdRamenDining />
-        </p>
-        <p className={styles.text}>
-          RIMA LAND 制作中
-          <FaSmileWink />
-        </p>
+        <div className={styles.maintenanceInner}>
+          <p className={styles.text}>
+            <MdRamenDining /> Currently in Production <MdRamenDining />
+          </p>
+          <p className={styles.text}>
+            RIMA LAND 制作中
+            <FaSmileWink />
+          </p>
+        </div>
       </div>
 
       <Loader />
