@@ -1,19 +1,5 @@
 @use 'media-query' as m;
 
-.wrapper {
-  padding: 20% 4%;
-
-  @include m.mq(sp) {
-    padding: 20% 4%;
-  }
-  @include m.mq(tab) {
-    padding: 10% 4%;
-  }
-  @include m.mq(pc) {
-    padding: 7% 4%;
-  }
-}
-
 .custom404Container {
   background-color: var(--background-color-white);
   max-width: 1766px;

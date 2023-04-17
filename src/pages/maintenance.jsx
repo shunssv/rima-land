@@ -2,7 +2,6 @@ import Head from 'next/head';
 import styles from '@/styles/Maintenance.module.scss';
 import { FaSmileWink } from 'react-icons/fa';
 import { MdRamenDining } from 'react-icons/md';
-import { Loader } from '@/components/Loader';
 
 export default function Maintenance() {
   return (
@@ -26,8 +25,6 @@ export default function Maintenance() {
           </p>
         </div>
       </div>
-
-      <Loader />
     </>
   );
 }
