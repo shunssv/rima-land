@@ -1,0 +1,15 @@
+@use '@/styles/media-query' as m;
+
+.wrapper {
+  padding: 20% 4%;
+
+  @include m.mq(sp) {
+    padding: 20% 4%;
+  }
+  @include m.mq(tab) {
+    padding: 10% 4%;
+  }
+  @include m.mq(pc) {
+    padding: 7% 4%;
+  }
+}

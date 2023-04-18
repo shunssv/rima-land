@@ -1,7 +1,4 @@
 .main {
   min-height: 100vh;
-  background-image: linear-gradient(to bottom,
-    rgb(0,0,0) 0%,
-    rgb(0,0,0) 100%
-  );
+  background-color: var(--background-color-white);
 }

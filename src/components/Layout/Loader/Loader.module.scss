@@ -21,6 +21,10 @@
       margin-top: 1em;
     }
   }
+  &.isHidden {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
 @keyframes rotate-10 {

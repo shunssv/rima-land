@@ -29,7 +29,7 @@ export function Loader() {
         </div>
       ) : (
         <div
-          className={`${styles.loaderContainer} animate__animated animate__fadeOut animate__slow`}
+          className={`${styles.loaderContainer} ${styles.isHidden} animate__animated animate__fadeOut animate__slow`}
         >
           <div
             className={`${styles.inner} animate__animated animate__fadeOut animate__faster`}
