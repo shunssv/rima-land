@@ -1,9 +1,9 @@
-import styles from './Layout.module.scss';
+import styles from './HomeLayout.module.scss';
 import { Header } from '@/components/Layout/Header';
 import { Footer } from '@/components/Layout/Footer';
 import { Loader } from '@/components/Layout/Loader';
 
-export function Layout({ children }) {
+export function HomeLayout({ children }) {
   return (
     <>
       <Header />

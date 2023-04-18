@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
+import { HomeLayout } from '@/components/Layout/HomeLayout';
 
 export default function Home() {
   return (
@@ -11,4 +12,10 @@ export default function Home() {
       <div className={styles.main}></div>
     </>
   );
+}
+
+Home.getLayout = function getLayout(page) {
+  return (
+    <HomeLayout>{page}</HomeLayout>
+  )
 }

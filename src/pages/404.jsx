@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from '@/styles/Custom404.module.scss';
 import Link from 'next/link';
 import { MdArrowForwardIos } from 'react-icons/md';
+import { Layout } from '@/components/Layout';
 
 export default function Custom404() {
   return (
@@ -37,3 +38,7 @@ export default function Custom404() {
     </>
   );
 }
+
+Custom404.getLayout = function getLayout(page) {
+  return <Layout>{page}</Layout>;
+};
