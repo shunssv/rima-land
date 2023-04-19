@@ -6,11 +6,34 @@
   padding: 25% 4%;
   position: relative;
   text-align: center;
+
+  @include m.mq(tab) {
+    padding: 25% 4%;
+  }
+  @include m.mq(pc) {
+    padding: 10% 4%;
+  }
+
   .title {
     left: 0;
     position: absolute;
     top: -35px;
+
+    @include m.mq(tab) {
+      top: -55px;
+    }
+    @include m.mq(pc) {
+      top: -60px;
+      left: 10px;
+    }
   }
+
+  .titleImage {
+    @include m.mq(tabAndPc) {
+      width: 200px;
+    }
+  }
+
   .text {
     margin-bottom: 5em;
     span {
@@ -18,28 +41,10 @@
       font-size: 2rem;
       font-weight: bold;
       margin-bottom: 0.5em;
-    }
-  }
 
-  @include m.mq(tabAndPc) {
-    .titleImage {
-      width: 200px;
-    }
-    .text span {
-      font-size: 2.5rem;
-    }
-  }
-  @include m.mq(tab) {
-    padding: 25% 4%;
-    .title {
-      top: -55px;
-    }
-  }
-  @include m.mq(pc) {
-    padding: 10% 4%;
-    .title {
-      top: -60px;
-      left: 10px;
+      @include m.mq(tabAndPc) {
+        font-size: 2.5rem;
+      }
     }
   }
 }
