@@ -4,20 +4,20 @@
   color: var(--font-color-white);
   padding: 8% 4% 1%;
   text-align: center;
+
   .footerLinkList {
     column-gap: 20px;
     display: flex;
     justify-content: center;
     margin-bottom: 3em;
-  }
-  .copyRightText {
-    font-size: 0.5rem;
-  }
 
-  @include m.mq(pc) {
-    .footerLinkList {
+    @include m.mq(pc) {
       justify-content: flex-end;
       margin-bottom: 0;
     }
+  }
+
+  .copyRightText {
+    font-size: 0.5rem;
   }
 }
