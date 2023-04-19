@@ -22,7 +22,7 @@ export function Footer() {
           </a>
         </li>
         <li>
-          <Link href="/disclamer">Disclaimer</Link>
+          <Link href="/disclaimer">Disclaimer</Link>
         </li>
       </ul>
       <small className={styles.copyRightText}>© 2023 RIMA LAND</small>

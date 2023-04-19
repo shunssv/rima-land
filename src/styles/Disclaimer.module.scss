@@ -1,0 +1,87 @@
+@use 'media-query' as m;
+
+.disclaimerContainer {
+  background-color: var(--background-color-white);
+  max-width: 1766px;
+  padding: 25% 4%;
+  position: relative;
+
+  @include m.mq(tab) {
+    padding: 10% 4%;
+  }
+  @include m.mq(pc) {
+    padding: 4% 4% 10%;
+  }
+
+  .breadcrumb {
+    display: none;
+
+    @include m.mq(tabAndPc) {
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    a {
+      @include m.mq(pc) {
+        text-decoration: underline;
+      }
+    }
+
+    .breadcrumbItem:not(:last-child)::after {
+      @include m.mq(tabAndPc) {
+        content: '-';
+        display: inline-block;
+        margin: 0 0.25em;
+      }
+    }
+  }
+
+  .title {
+    left: 0;
+    position: absolute;
+    top: -35px;
+
+    @include m.mq(tab) {
+      top: -55px;
+    }
+    @include m.mq(pc) {
+      left: 10px;
+      top: -60px;
+    }
+  }
+
+  .titleImage {
+    width: 100%;
+    @include m.mq(tab) {
+      width: 65vw;
+    }
+    @include m.mq(pc) {
+      width: 40vw;
+    }
+  }
+
+  .introduction {
+    @include m.mq(tab) {
+      margin-top: 3em;
+    }
+    @include m.mq(pc) {
+      margin-top: 5em;
+    }
+  }
+
+  .disclaimerItem {
+    margin-top: 1.5em;
+
+    .heading {
+      font-size: 1.25rem;
+      font-weight: bold;
+    }
+    .detail {
+      margin-top: 0.25em;
+      &:not(:first-of-type) {
+        margin-top: 1em;
+      }
+    }
+  }
+}
