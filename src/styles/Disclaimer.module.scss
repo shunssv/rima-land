@@ -17,10 +17,19 @@
     display: none;
 
     @include m.mq(tabAndPc) {
-      color: 0.875rem;
+      font-size: 0.875rem;
       display: flex;
       justify-content: flex-end;
-      .breadcrumbItem:not(:last-child)::after {
+    }
+
+    a {
+      @include m.mq(pc) {
+        text-decoration: underline;
+      }
+    }
+
+    .breadcrumbItem:not(:last-child)::after {
+      @include m.mq(tabAndPc) {
         content: '-';
         display: inline-block;
         margin: 0 0.25em;
@@ -43,8 +52,12 @@
   }
 
   .titleImage {
-    @include m.mq(tabAndPc) {
-      width: 200px;
+    width: 100%;
+    @include m.mq(tab) {
+      width: 65vw;
+    }
+    @include m.mq(pc) {
+      width: 40vw;
     }
   }
 
@@ -53,7 +66,7 @@
       margin-top: 3em;
     }
     @include m.mq(pc) {
-      
+      margin-top: 5em;
     }
   }
 

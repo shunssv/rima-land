@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from '@/styles/Disclaimer.module.scss';
 import Link from 'next/link';
 import { Layout } from '@/components/Layout';
+import titleImage from '@/assets/disclaimer.svg';
+
 
 export default function Disclaimer() {
   return (
@@ -25,11 +27,10 @@ export default function Disclaimer() {
 
         <h2 className={styles.title}>
           <Image
-            src="/404.svg"
-            width={120}
-            height={78}
-            alt="404 page not found"
+            src={titleImage}
+            alt="Disclaimer"
             className={styles.titleImage}
+            sizes="100vw"
             priority
           />
         </h2>
@@ -42,6 +43,21 @@ export default function Disclaimer() {
           <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
         </dl>
 
+        <dl className={styles.disclaimerItem}>
+          <dt className={styles.heading}>免責事項見出しが入ります</dt>
+          <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
+        </dl>
+        
+        <dl className={styles.disclaimerItem}>
+          <dt className={styles.heading}>免責事項見出しが入ります</dt>
+          <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
+        </dl>
+        
+        <dl className={styles.disclaimerItem}>
+          <dt className={styles.heading}>免責事項見出しが入ります</dt>
+          <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
+        </dl>
+        
         <dl className={styles.disclaimerItem}>
           <dt className={styles.heading}>免責事項見出しが入ります</dt>
           <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
