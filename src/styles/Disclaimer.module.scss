@@ -52,7 +52,6 @@
   }
 
   .titleImage {
-    width: 100%;
     @include m.mq(tab) {
       width: 65vw;
     }
