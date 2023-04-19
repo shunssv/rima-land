@@ -23,19 +23,25 @@
       top: -55px;
     }
     @include m.mq(pc) {
-      top: -60px;
       left: 10px;
+      top: -60px;
     }
   }
 
   .titleImage {
-    @include m.mq(tabAndPc) {
-      width: 200px;
+    width: 40vw;
+
+    @include m.mq(tab) {
+      width: 30vw;
+    }
+    @include m.mq(pc) {
+      width: 15vw;
     }
   }
 
   .text {
     margin-bottom: 5em;
+
     span {
       display: block;
       font-size: 2rem;
@@ -58,6 +64,7 @@
   padding: 1em 3em;
   position: relative;
   text-align: center;
+
   .icon {
     position: absolute;
     right: 3%;

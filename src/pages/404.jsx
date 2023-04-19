@@ -4,6 +4,7 @@ import styles from '@/styles/Custom404.module.scss';
 import Link from 'next/link';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { Layout } from '@/components/Layout';
+import titleImage from '@/assets/404.svg';
 
 export default function Custom404() {
   return (
@@ -16,11 +17,10 @@ export default function Custom404() {
       <section className={styles.custom404Container}>
         <h2 className={styles.title}>
           <Image
-            src="/404.svg"
-            width={120}
-            height={78}
+            src={titleImage}
             alt="404 page not found"
             className={styles.titleImage}
+            sizes="100vw"
             priority
           />
         </h2>
