@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Disclaimer.module.scss';
 import Link from 'next/link';
-import { MdArrowForwardIos } from 'react-icons/md';
 import { Layout } from '@/components/Layout';
 
 export default function Disclaimer() {
@@ -39,6 +38,7 @@ export default function Disclaimer() {
 
         <dl className={styles.disclaimerItem}>
           <dt className={styles.heading}>免責事項見出しが入ります</dt>
+          <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
           <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
         </dl>
 
