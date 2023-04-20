@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import styles from '@/styles/Home.module.scss';
 import { HomeLayout } from '@/components/Layout/HomeLayout';
-import MainVisual from '@/assets/maintenance-bg.svg';
+import MainVisual from '@/assets/home-mv.svg';
 import Image from 'next/image';
 
 export default function Home() {
@@ -12,8 +12,9 @@ export default function Home() {
         <meta name="description" content="WELCOME TO RIMA LAND" />
       </Head>
       <div className={styles.main}>
-        <Image src={MainVisual} alt="Welcome to RIMA LAND" sizes="100vw" priority /> 
+        {/* <Image src={MainVisual} alt="Welcome to RIMA LAND" sizes="100vw" priority />  */}
       </div>
+
     </>
   );
 }
