@@ -1,12 +1,12 @@
 import styles from './HomeLayout.module.scss';
-import { Header } from '@/components/Layout/Header';
 import { Footer } from '@/components/Layout/Footer';
 import { Loader } from '@/components/Layout/Loader';
+import { HomeHeader } from './HomeHeader';
 
 export function HomeLayout({ children }) {
   return (
     <>
-      <Header />
+      <HomeHeader />
       <main className={styles.wrapper}>{children}</main>
       <Footer />
       <Loader />
