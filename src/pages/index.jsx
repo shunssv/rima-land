@@ -1,8 +1,8 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
 import { HomeLayout } from '@/components/Layout/HomeLayout';
 import mainVisual from '@/assets/home-mv.svg';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -11,10 +11,9 @@ export default function Home() {
         <title>WELCOME TO RIMA LAND</title>
         <meta name="description" content="WELCOME TO RIMA LAND" />
       </Head>
-      <div className={styles.main}>
+      <div className={styles.mainVisualContainer}>
         <Image src={mainVisual} alt="Welcome to RIMA LAND" sizes="100vw" className={styles.mainVisual} priority /> 
-
-        <div className={styles.maintenanceInner}>
+        <div className={styles.mainVisualIntroduction}>
           <p className={styles.text}>
             RIMA LANDはNiziU RIMAファンサイトです。 
           </p>
