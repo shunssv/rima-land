@@ -1,6 +1,41 @@
+@use 'media-query' as m;
+
 .main {
   background: url('../assets/home-mv-background.svg') center / cover no-repeat;
-  min-height: 130vh;
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);
+
+  @include m.mq(sp) {
+    padding: 80px 0;
+  }
+  @include m.mq(tabAndPc) {
+    padding: 100px 0;
+  }
+
+  .mainVisual {
+    margin: 0 auto;
+
+    @include m.mq(sp) {
+      width: 90%;
+    }
+    @include m.mq(tab) {
+      width: 70%;
+    }
+  }
+}
+
+.maintenanceInner {
+  background-color: var(--background-color-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0px 0px 7px rgb(99, 99, 99, 0.6);
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2em 0;
+  width: 90%;
+}
+
+.text {
+  display: flex;
+  gap: 0.5em;
+  justify-content: center;
 }
