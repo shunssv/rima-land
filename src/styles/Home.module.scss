@@ -41,12 +41,13 @@
 }
 
 .learnHerMoreContainer {
-  width: 1100px;
   margin: 0 auto;
+  width: 1100px;
 }
 
 .youtubeList {
   display: grid;
-  grid-template-columns: repeat(3, 550px);
   gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: repeat(3, auto);
 }

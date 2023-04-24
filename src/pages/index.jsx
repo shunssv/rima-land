@@ -3,6 +3,8 @@ import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
 import { HomeLayout } from '@/components/Layout/HomeLayout';
 import mainVisual from '@/assets/home-mv.svg';
+import Link from 'next/link';
+import { youtube01, youtube02, youtube03, learnHerMore } from '@/assets/';
 
 export default function Home() {
   return (
@@ -25,188 +27,105 @@ export default function Home() {
         </div>
       </div>
 
-      <section className='learnHerMoreContainer'>
-        <h2 className='title'></h2>
+      <section className="learnHerMoreContainer">
+        <h2 className="title">
+          <Image
+            src={learnHerMore}
+            alt="Learn her more here"
+            sizes="100vw"
+            priority
+          />
+        </h2>
         <ul className={styles.youtubeList} role="list">
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/hHVcOjdQrhs" target="_blank">
+              <Image
+                src={youtube01}
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                sizes="100vw"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/WXY0uGNi-IA" target="_blank">
+              <Image
+                src={youtube02}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/7FzqKhvgmVY" target="_blank">
+              <Image
+                src={youtube03}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/hHVcOjdQrhs" target="_blank">
+              <Image
+                src={youtube01}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/WXY0uGNi-IA" target="_blank">
+              <Image
+                src={youtube02}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/7FzqKhvgmVY" target="_blank">
+              <Image
+                src={youtube03}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/hHVcOjdQrhs" target="_blank">
+              <Image
+                src={youtube01}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/WXY0uGNi-IA" target="_blank">
+              <Image
+                src={youtube02}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
           <li>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/7FzqKhvgmVY"
-              srcdoc="
-              <style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
-              <a href=https://www.youtube.com/embed/7FzqKhvgmVY?autoplay=1>
-                <img 
-                  src=https://img.youtube.com/vi/7FzqKhvgmVY/hqdefault.jpg 
-                  alt='Video: To.NiziU EP3 RIMA&NINA'>
-                <span>&#x25BA;</span>
-              </a>"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              title="To.NiziU EP3 RIMA&NINA"
-              loading="lazy"
-            ></iframe>
+            <a href="https://youtu.be/7FzqKhvgmVY" target="_blank">
+              <Image
+                src={youtube03}
+                sizes="100vw"
+                alt="[NiziU LOG] #33 ミニゲームセンター"
+                priority
+              />
+            </a>
           </li>
         </ul>
       </section>
