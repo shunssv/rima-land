@@ -15,6 +15,14 @@ import {
   youtube08,
   youtube09,
   learnHerMore,
+  instagram,
+  tiktok,
+  twitter,
+  line,
+  facebook,
+  niziu,
+  withu,
+  official,
 } from '@/assets/';
 
 export default function Home() {
@@ -144,6 +152,99 @@ export default function Home() {
                 src={youtube09}
                 alt="To.NiziU EP9 MAYUKA&RIMA"
                 sizes="100vw"
+                priority
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section className={styles.officialContainer}>
+        <h2>
+          <Image
+            src={official}
+            alt="Official"
+            sizes="100vw"
+            className={styles.titleImage}
+            priority
+          />
+        </h2>
+        <ul className={styles.officialSiteList} role="list">
+          <li className={styles.listItem}>
+            <a href="https://niziu.com" target="_blank" rel="noopener">
+              <Image
+                src={niziu}
+                alt="NiziU Official Website"
+                sizes="100vw"
+                className={styles.officialImage}
+                priority
+              />
+            </a>
+          </li>
+          <li className={styles.listItem}>
+            <a href="https://fc.niziu.com" target="_blank" rel="noopener">
+              <Image
+                src={withu}
+                alt="NiziU OFFICIAL FANCLUB WithU"
+                sizes="100vw"
+                className={styles.officialImage}
+                priority
+              />
+            </a>
+          </li>
+        </ul>
+        <ul className={styles.officialSNSList} role="list">
+          <li>
+            <a href="https://www.instagram.com/niziu_info_official/" target="_blank" rel="noopener">
+              <Image
+                src={instagram}
+                alt="NiziU @niziu_info_official | Instagram"
+                sizes="100vw"
+                className={styles.officialImage}
+                priority
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@niziu_official" target="_blank" rel="noopener">
+              <Image
+                src={tiktok}
+                alt="NiziU @niziu_official | Tiktok"
+                sizes="100vw"
+                className={styles.officialImage}
+                priority
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/NiziU__official" target="_blank" rel="noopener">
+              <Image
+                src={twitter}
+                alt="NiziU @NiziU__official | Twitter"
+                sizes="100vw"
+                className={styles.officialImage}
+                priority
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://lin.ee/XNJHkof" target="_blank" rel="noopener">
+              <Image
+                src={line}
+                alt="NiziU Official | LINE"
+                sizes="100vw"
+                className={styles.officialImage}
+                priority
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/NiziUinfoofficial" target="_blank" rel="noopener">
+              <Image
+                src={facebook}
+                alt="NiziU Official | facebook"
+                sizes="100vw"
+                className={styles.officialImage}
                 priority
               />
             </a>
