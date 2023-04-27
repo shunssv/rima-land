@@ -98,26 +98,134 @@
 }
 
 .officialContainer {
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+  overflow: hidden;
+  padding: 40% 0;
   position: relative;
+  
+  @include m.mq(pc) {
+    padding: 0;
+  }
+
+  &::before {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 800px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 800px;
+    z-index: -1;
+
+    @include m.mq(sp) {
+    
+    }
+    @include m.mq(tabAndPc) {
+      height: 900px;
+      width: 900px;
+    }
+    @include m.mq(tab) {
+      
+    }
+    @include m.mq(pc) {
+      
+    }
+  }
+
+  .titleImage {
+    @include m.mq(tabAndPc) {
+      margin: 0 auto;
+    }
+  }
 
   .officialListContainer {
-    margin-left: calc(((100vw - 100%) / 2) * -1);
-    margin-right: calc(((100vw - 100%) / 2) * -1);
-    overflow: hidden;
-    position: relative;
+    margin: 10% 0 30%;
+
+    @include m.mq(tab) {
+      margin: 10% 0 15%;
+    }
+    @include m.mq(pc) {
+      
+    }
+  }
+
+  .officialSiteList {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    @include m.mq(sp) {
     
-    &::before {
-      background-color: #fff;
-      content: '';
-      display: block;
-      height: 900px;
-      left: 50%;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
-      width: 900px;
-      z-index: -1;
+    }
+    @include m.mq(tabAndPc) {
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include m.mq(tab) {
+      
+    }
+    @include m.mq(pc) {
+      
+    }
+
+    .listItem {
+      background-color: var(--background-color-white);
+      border-radius: var(--border-radius);
+      box-shadow: 0px 0px 7px rgb(99, 99, 99, 0.6);
+      width: 80%;
+
+      &:first-of-type {
+        padding: 15% ;
+      }
+      &:last-of-type {
+        padding: 11% 10%;
+      }
+      
+      @include m.mq(sp) {
+        
+      }
+      @include m.mq(tabAndPc) {
+        max-width: 350px;
+
+        &:first-of-type {
+          padding: 100px 60px;
+        }
+        &:last-of-type {
+          padding: 75px 30px;
+        }
+      }
+      @include m.mq(tab) {
+        
+      }
+      @include m.mq(pc) {
+        
+      }
+    }
+  }
+
+  .officialSNSList {
+    column-gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+
+    @include m.mq(tabAndPc) {
+      column-gap: 45px;
+    }
+    @include m.mq(tab) {
+      margin-top: 10%;
+    }
+    @include m.mq(pc) {
+      
+    }
+
+    .snsImage {
+      width: 50px;
     }
   }
 }

@@ -201,7 +201,7 @@ export default function Home() {
                   src={instagram}
                   alt="NiziU @niziu_info_official | Instagram"
                   sizes="100vw"
-                  className={styles.officialImage}
+                  className={styles.snsImage}
                   priority
                 />
               </a>
@@ -212,7 +212,7 @@ export default function Home() {
                   src={tiktok}
                   alt="NiziU @niziu_official | Tiktok"
                   sizes="100vw"
-                  className={styles.officialImage}
+                  className={styles.snsImage}
                   priority
                 />
               </a>
@@ -223,7 +223,7 @@ export default function Home() {
                   src={twitter}
                   alt="NiziU @NiziU__official | Twitter"
                   sizes="100vw"
-                  className={styles.officialImage}
+                  className={styles.snsImage}
                   priority
                 />
               </a>
@@ -234,7 +234,7 @@ export default function Home() {
                   src={line}
                   alt="NiziU Official | LINE"
                   sizes="100vw"
-                  className={styles.officialImage}
+                  className={styles.snsImage}
                   priority
                 />
               </a>
@@ -245,7 +245,7 @@ export default function Home() {
                   src={facebook}
                   alt="NiziU Official | facebook"
                   sizes="100vw"
-                  className={styles.officialImage}
+                  className={styles.snsImage}
                   priority
                 />
               </a>
