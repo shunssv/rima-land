@@ -96,3 +96,28 @@
     }
   }
 }
+
+.officialContainer {
+  position: relative;
+
+  .officialListContainer {
+    margin-left: calc(((100vw - 100%) / 2) * -1);
+    margin-right: calc(((100vw - 100%) / 2) * -1);
+    overflow: hidden;
+    position: relative;
+    
+    &::before {
+      background-color: #fff;
+      content: '';
+      display: block;
+      height: 900px;
+      left: 50%;
+      overflow: hidden;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+      width: 900px;
+      z-index: -1;
+    }
+  }
+}
