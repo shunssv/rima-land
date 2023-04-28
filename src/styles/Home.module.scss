@@ -98,26 +98,132 @@
 }
 
 .officialContainer {
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+  overflow: hidden;
+  padding: 40% 0;
   position: relative;
+  
+  @include m.mq(tab) {
+    padding: 190px 0;
+  }
+  @include m.mq(pc) {
+    padding: 8% 0;
+  }
+
+  &::before {
+    background-color: #fff;
+    content: '';
+    display: block;
+    height: 820px;
+    left: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 820px;
+    z-index: -1;
+
+    @include m.mq(tabAndPc) {
+      height: 900px;
+      width: 900px;
+    }
+  }
+
+  .title {
+    @include m.mq(sp) {
+      padding: 0 4%;
+    }
+    @include m.mq(pc) {
+      margin-top: 5%;
+    }
+
+    .titleImage {
+      @include m.mq(tabAndPc) {
+        margin: 0 auto;
+      }
+    }
+  }
 
   .officialListContainer {
-    margin-left: calc(((100vw - 100%) / 2) * -1);
-    margin-right: calc(((100vw - 100%) / 2) * -1);
-    overflow: hidden;
-    position: relative;
-    
-    &::before {
-      background-color: #fff;
-      content: '';
-      display: block;
-      height: 900px;
-      left: 50%;
-      overflow: hidden;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%) rotate(45deg);
-      width: 900px;
-      z-index: -1;
+    margin: 10% 0 30%;
+  
+    @include m.mq(tab) {
+      margin: 10% 0 15%;
+    }
+    @include m.mq(pc) {
+      margin: 5% 0 10%;
+    }
+  }
+  
+  .officialSiteList {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  
+    @include m.mq(tabAndPc) {
+      flex-direction: row;
+      justify-content: center;
+    }
+    @include m.mq(pc) {
+      gap: 55px;
+    }
+  
+    .listItem {
+      background-color: var(--background-color-white);
+      border-radius: var(--border-radius);
+      box-shadow: 0 5px 30px rgba(99,99,99,0.08), 0 12px 36px rgba(99,99,99,0.05);
+      max-width: 350px;
+      width: 80%;
+      transition: box-shadow 0.3s ease-in-out;
+
+      @include m.mq(tabAndPc) {
+        min-height: 400px;
+      }
+      
+      &:first-of-type {
+        padding: 15%;
+        
+        @include m.mq(tabAndPc) {
+          padding: 6% 4%;
+          padding: 100px 67px;
+        }
+      }
+      
+      &:last-of-type {
+        padding: 11% 10%;
+        
+        @include m.mq(tabAndPc) {
+          padding: 4% 2%;
+          padding: 67px 33.5px;
+        }
+      }
+
+      &:hover {
+        box-shadow: 0 8px 30px rgba(0,16,14,0.17), 0 4px 4px rgba(0,0,0,0.01), 0 12px 36px rgba(0,0,0,0.04);
+      }
+    }
+  }
+
+  .officialSNSList {
+    column-gap: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+
+    @include m.mq(tabAndPc) {
+      column-gap: 45px;
+    }
+    @include m.mq(tab) {
+      margin-top: 10%;
+    }
+    @include m.mq(pc) {
+      margin-top: 6%;
+    }
+
+    .snsImage {
+      width: 50px;
     }
   }
 }
