@@ -160,7 +160,7 @@ export default function Home() {
       </section>
 
       <section className={styles.officialContainer}>
-        <h2>
+        <h2 className={styles.title}>
           <Image
             src={official}
             alt="Official"
