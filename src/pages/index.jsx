@@ -23,6 +23,7 @@ import {
   niziu,
   withu,
   official,
+  rimania,
 } from '@/assets/';
 
 export default function Home() {
@@ -45,6 +46,21 @@ export default function Home() {
           <p className={styles.text}>WithUにて運営しております。</p>
         </div>
       </div>
+
+      <section className={styles.rimaniaContainer}>
+          <h2 className={styles.title}>
+            <Image
+              src={rimania}
+              alt="Rimania!"
+              sizes="100vw"
+              className={styles.titleImage}
+              priority
+            />
+          </h2>
+          <div className={styles.rimaniaMainContent}>
+            <p>Coming Soon!</p>
+          </div>
+      </section>
 
       <section className={styles.learnHerMoreContainer}>
         <h2>
