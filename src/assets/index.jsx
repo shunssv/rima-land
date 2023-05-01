@@ -16,6 +16,7 @@ import facebook from './sns-facebook.svg';
 import niziu from './official-niziu.svg';
 import withu from './official-withu.svg';
 import official from './home-official.svg';
+import rimania from './home-rimania.svg';
 
 export {
   youtube01,
@@ -36,6 +37,7 @@ export {
   niziu,
   withu,
   official,
+  rimania,
 };
 
 // on jsx file

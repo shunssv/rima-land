@@ -40,6 +40,45 @@
   }
 }
 
+.rimaniaContainer {
+  background: url('../assets/home-rimania-background-01.svg') center center / cover no-repeat;
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+
+  &::before {
+    content: url(../assets/home-rimania-background-02.svg);
+    display: block;
+    width: 300px;
+  }
+
+  .title {
+    @include m.mq(sp) {
+      padding: 0 4%;
+    }
+    @include m.mq(pc) {
+      margin-top: 5%;
+    }
+
+    .titleImage {
+      @include m.mq(tabAndPc) {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .rimaniaMainContent {
+    background-color: var(--background-color-white);
+    border-radius: var(--border-radius);
+    box-shadow: 0px 0px 7px rgb(99, 99, 99, 0.6);
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2em 0;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+
 .learnHerMoreContainer {
   padding: 20% 0;
 
