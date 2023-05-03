@@ -24,6 +24,7 @@ import {
   withu,
   official,
   rimania,
+  rimaniaArrow,
 } from '@/assets/';
 
 export default function Home() {
@@ -58,7 +59,7 @@ export default function Home() {
             />
           </h2>
           <div className={styles.rimaniaMainContent}>
-            <p>Coming Soon!</p>
+            <p>COMING SOON!</p>
           </div>
       </section>
 
