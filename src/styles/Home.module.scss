@@ -48,16 +48,15 @@
   min-height: 100vh;
   z-index: 0;
   margin-top: 20%;
-  overflow: hidden;
 
-  padding-top: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3em;
 
-  @include m.mq(tab) {
-    padding-top: 200px;
-  }
-
-  @include m.mq(pc) {
-    padding: 10% 0;
+  @include m.mq(tabAndPc) {
+    min-height: 150vh;
+    margin-top: 10%;
   }
 
   &::before {
@@ -67,8 +66,9 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -50px;
-    left: 0;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: -1;
     
 
@@ -76,10 +76,6 @@
     
     }
     @include m.mq(tab) {
-      width: 120%;
-    height: 120%;
-    position: absolute;
-    top: -160px;
     }
     @include m.mq(pc) {
       
@@ -109,19 +105,10 @@
     max-width: 800px;
     padding: 7em 0;
     text-align: center;
-    width: 90%;
-
-    margin-top: 20%;
+    width: 92%;
 
     @include m.mq(tabAndPc) {
-    
-    }
-    @include m.mq(tab) {
-      margin-top: 10%;
       padding: 10em 0;
-    }
-    @include m.mq(pc) {
-      
     }
   }
 }
@@ -187,7 +174,6 @@
 .officialContainer {
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);
-  overflow: hidden;
   padding: 40% 0;
   position: relative;
   
@@ -204,7 +190,6 @@
     display: block;
     height: 820px;
     left: 50%;
-    overflow: hidden;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
