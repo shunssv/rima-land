@@ -24,7 +24,7 @@ import {
   withu,
   official,
   rimania,
-  rimaniaArrow,
+  blackCheckeredBackground,
 } from '@/assets/';
 
 export default function Home() {
@@ -46,6 +46,17 @@ export default function Home() {
           <p className={styles.text}>RIMA LANDはNiziU RIMAファンサイトです。</p>
           <p className={styles.text}>WithUにて運営しております。</p>
         </div>
+      </div>
+      
+      <section className={styles.whoRimaIsContainer}></section>
+      
+      <div className={styles.blackCheckeredImageWrapper}>
+        <Image
+          src={blackCheckeredBackground}
+          alt=""
+          sizes="100vw"
+          priority
+        />
       </div>
 
       <section className={styles.rimaniaContainer}>
@@ -175,6 +186,15 @@ export default function Home() {
           </li>
         </ul>
       </section>
+
+      <div className={styles.blackCheckeredImageWrapper}>
+        <Image
+          src={blackCheckeredBackground}
+          alt=""
+          sizes="100vw"
+          priority
+        />
+      </div>
 
       <section className={styles.officialContainer}>
         <h2 className={styles.title}>
