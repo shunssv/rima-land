@@ -24,8 +24,8 @@ import {
   withu,
   official,
   rimania,
-  blackCheckeredBackground,
 } from '@/assets/';
+import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 
 export default function Home() {
   return (
@@ -50,14 +50,7 @@ export default function Home() {
       
       <section className={styles.whoRimaIsContainer}></section>
       
-      <div className={styles.blackCheckeredImageWrapper}>
-        <Image
-          src={blackCheckeredBackground}
-          alt=""
-          sizes="100vw"
-          priority
-        />
-      </div>
+      <BlackCheckeredPattern />
 
       <section className={styles.rimaniaContainer}>
           <h2 className={styles.title}>
@@ -187,14 +180,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <div className={styles.blackCheckeredImageWrapper}>
-        <Image
-          src={blackCheckeredBackground}
-          alt=""
-          sizes="100vw"
-          priority
-        />
-      </div>
+      <BlackCheckeredPattern />
 
       <section className={styles.officialContainer}>
         <h2 className={styles.title}>
