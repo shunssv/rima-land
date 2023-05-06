@@ -17,7 +17,7 @@ import niziu from './official-niziu.svg';
 import withu from './official-withu.svg';
 import official from './home-official.svg';
 import rimania from './home-rimania.svg';
-import blackCheckeredBackground from './checkered-background-black.svg';
+import blackCheckeredPattern from './checkered-pattern-black.svg';
 
 export {
   youtube01,
@@ -39,7 +39,7 @@ export {
   withu,
   official,
   rimania,
-  blackCheckeredBackground,
+  blackCheckeredPattern,
 };
 
 // on jsx file
