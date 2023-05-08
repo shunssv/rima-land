@@ -108,10 +108,36 @@
   }
 }
 
+.redCheckeredPatternContainer {
+  margin: 15% calc(((100vw - 100%) / 2) * -1) 0 0;
+  
+  @include m.mq(tab) {
+    margin: 12% calc(((100vw - 100%) / 2) * -1) 0 0;
+  }
+  @include m.mq(pc) {
+    margin: 0 calc(((100vw - 100%) / 2) * -1) 0 0;
+    position: relative;
+  }
+  
+  .redCheckeredPattern.isFlip {
+    margin-left: auto;
+    transform: scale(-1,1);
+
+    @include m.mq(pc) {
+      position: absolute;
+      right: 0;
+      top: 145px;
+    }
+  }
+
+}
 
 .learnHerMoreContainer {
   padding: 20% 0;
 
+  @include m.mq(tab) {
+    padding: 15% 0;
+  }
   @include m.mq(pc) {
     padding: 10% 0;
   }

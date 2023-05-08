@@ -4,6 +4,7 @@ import styles from '@/styles/Home.module.scss';
 import { HomeLayout } from '@/components/Layout/HomeLayout';
 import mainVisual from '@/assets/home-mv.svg';
 import Link from 'next/link';
+import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import {
   youtube01,
   youtube02,
@@ -24,8 +25,9 @@ import {
   withu,
   official,
   rimania,
+  redCheckeredPattern,
 } from '@/assets/';
-import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
+
 
 export default function Home() {
   return (
@@ -66,6 +68,16 @@ export default function Home() {
             <p>COMING SOON!</p>
           </div>
       </section>
+      
+      <div className={styles.redCheckeredPatternContainer}>
+        <Image
+            src={redCheckeredPattern}
+            alt=""
+            sizes="100vw"
+            className={`${styles.redCheckeredPattern} ${styles.isFlip}`}
+            priority
+          />
+      </div>
 
       <section className={styles.learnHerMoreContainer}>
         <h2>

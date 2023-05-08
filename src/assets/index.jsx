@@ -18,6 +18,7 @@ import withu from './official-withu.svg';
 import official from './home-official.svg';
 import rimania from './home-rimania.svg';
 import blackCheckeredPattern from './checkered-pattern-black.svg';
+import redCheckeredPattern from './checkered-pattern-red.svg';
 
 export {
   youtube01,
@@ -40,6 +41,7 @@ export {
   official,
   rimania,
   blackCheckeredPattern,
+  redCheckeredPattern,
 };
 
 // on jsx file
