@@ -41,6 +41,34 @@
 }
 
 .whoRimaIsContainer {
+  background-color: var(--background-color-white);
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  margin-right: calc(((100vw - 100%) / 2) * -1);
+
+  .title {
+
+
+    .titleImage {
+
+    }
+  }
+
+  .rimaInformation {
+    background-color: var(--background-color-white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    max-width: 800px;
+    padding: 7em 0;
+    text-align: center;
+    width: 92%;
+
+    @include m.mq(tabAndPc) {
+      padding: 10em 0;
+    }
+  }
+}
+
+.rimaIsLovelyContainer {
   margin-top: 20%;
 
   @include m.mq(tabAndPc) {

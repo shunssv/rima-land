@@ -19,6 +19,8 @@ import official from './home-official.svg';
 import rimania from './home-rimania.svg';
 import blackCheckeredPattern from './checkered-pattern-black.svg';
 import redCheckeredPattern from './checkered-pattern-red.svg';
+import whoRima from './home-who-rima-is-01.svg';
+import is from './home-who-rima-is-02.svg';
 
 export {
   youtube01,
@@ -42,6 +44,8 @@ export {
   rimania,
   blackCheckeredPattern,
   redCheckeredPattern,
+  whoRima,
+  is,
 };
 
 // on jsx file
