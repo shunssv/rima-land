@@ -26,6 +26,8 @@ import {
   official,
   rimania,
   redCheckeredPattern,
+  whoRima,
+  is,
 } from '@/assets/';
 
 
@@ -50,7 +52,53 @@ export default function Home() {
         </div>
       </div>
       
-      <section className={styles.whoRimaIsContainer}></section>
+      <section className={styles.whoRimaIsContainer}>
+        <h2 className={styles.title}>
+          <Image
+            src={whoRima}
+            alt="WHO RIMA"
+            sizes="100vw"
+            className={styles.titleWhoRimaImage}
+            priority
+          />
+          <Image
+            src={is}
+            alt="is..."
+            sizes="100vw"
+            className={styles.titleIsImage}
+            priority
+          />
+        </h2>
+        <div className={styles.rimaInformation}>
+          <p>ソニーミュージック・JYP合同オーディションプロジェクト「Nizi Project」より1万人の中から選ばれ構成されたガールズグループ「NiziU」のメンバーの一人。</p>
+          <p>RIMAは主にラップを担当。時にラップを作詞する本格派。 また、日本語と英語、韓国語が堪能で世界へ発信する要となっています。</p>
+          <div className={styles.rimaProfile}>
+            <dl className={styles.profileItem}>
+              <dt className={styles.profileBadge}>NAME</dt>
+              <dd className={styles.profileDetail}>RIMA NAKABAYASHI</dd>
+            </dl>
+            <dl className={styles.profileItem}>
+              <dt className={styles.profileBadge}>COLOR</dt>
+              <dd className={styles.profileDetail}>PANTONE® 200C</dd>
+            </dl>
+            <dl className={styles.profileItem}>
+              <dt className={styles.profileBadge}>GREETING</dt>
+              <dd className={styles.profileDetail}>NiziUの魅力的なボイス</dd>
+            </dl>
+            <dl className={styles.profileItem}>
+              <dt className={styles.profileBadge}>BORN</dt>
+              <dd className={styles.profileDetail}>March 26th, 2004</dd>
+            </dl>
+            <dl className={styles.profileItem}>
+              <dt className={styles.profileBadge}>NIZOO*</dt>
+              <dd className={styles.profileDetail}>Llanu<span>*NiziU Official Characters</span></dd>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+
+      <section className={styles.rimaIsLovelyContainer}></section>
       
       <BlackCheckeredPattern />
 
