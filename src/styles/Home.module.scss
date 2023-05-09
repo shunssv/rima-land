@@ -44,12 +44,16 @@
   background-color: var(--background-color-white);
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);
+  position: relative;
+  padding: 76% 4% 20%;
 
   .title {
-
-
-    .titleImage {
-
+    position: absolute;
+    top: -2%;
+    left: 4%;
+    .titleIsImage {
+      margin-top: 5%;
+      margin-left: 2%;
     }
   }
 
@@ -58,12 +62,51 @@
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     max-width: 800px;
-    padding: 7em 0;
-    text-align: center;
-    width: 92%;
+    padding: 2em;
+    width: 100%;
 
     @include m.mq(tabAndPc) {
       padding: 10em 0;
+    }
+
+    p + p {
+      margin-top: 1em;
+    }
+  }
+  
+  .rimaProfile {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    
+    .profileItem {
+      display: flex;
+      gap: 1em;
+    }
+
+    .profileBadge {
+      background-color: #c2283c;
+      color: #fff;
+      display: block;
+      font-weight: bold;
+      padding: 0.25em 1em;
+      width: 85px;
+      text-align: center;
+
+      @include m.mq(sp) {
+        border-radius: 15px;
+        font-size: 0.75rem;
+      }
+      @include m.mq(tabAndPc) {
+        border-radius: 14px;
+        font-size: 0.875rem;
+      }
+    }
+
+    .profileDetail span {
+      font-size: 0.5rem;
+      margin-left: 1em;
     }
   }
 }
