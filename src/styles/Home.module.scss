@@ -47,13 +47,43 @@
   position: relative;
   padding: 76% 4% 20%;
 
+  @include m.mq(tab) {
+    padding: 350px 4% 100px;
+  }
+  @include m.mq(pc) {
+    padding: 350px 4% 150px;
+  }
+
   .title {
     position: absolute;
     top: -2%;
     left: 4%;
+
+    @include m.mq(tabAndPc) {
+      display: flex;
+      align-items: flex-end;
+      gap: 0.5em;
+    }
+
+    .titleWhoRimaImage {
+      @include m.mq(tabAndPc) {
+        width: 100%;
+      }
+      @include m.mq(tab) {
+        width: 80%;
+      }
+      @include m.mq(pc) {
+        width: 100%;
+      }
+    }
+
     .titleIsImage {
       margin-top: 5%;
       margin-left: 2%;
+
+      @include m.mq(tabAndPc) {
+        width: 25%;
+      }
     }
   }
 
@@ -64,10 +94,6 @@
     max-width: 800px;
     padding: 2em;
     width: 100%;
-
-    @include m.mq(tabAndPc) {
-      padding: 10em 0;
-    }
 
     p + p {
       margin-top: 1em;
@@ -81,6 +107,7 @@
     gap: 0.5em;
     
     .profileItem {
+      align-items: center;
       display: flex;
       gap: 1em;
     }
@@ -91,7 +118,8 @@
       display: block;
       font-weight: bold;
       padding: 0.25em 1em;
-      width: 85px;
+      max-width: 100px;
+      width: 100%;
       text-align: center;
 
       @include m.mq(sp) {
