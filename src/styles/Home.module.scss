@@ -252,7 +252,7 @@
       top: 3%;
       
       @include m.mq(sp) {
-        border-radius: 12px;
+        border-radius: 13px;
         font-size: 0.75rem;
       }
       @include m.mq(tabAndPc) {
