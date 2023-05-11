@@ -1,3 +1,4 @@
+import mainVisual from './home-mv.png';
 import youtube01 from './youtube01.jpg';
 import youtube02 from './youtube02.jpg';
 import youtube03 from './youtube03.jpg';
@@ -23,6 +24,7 @@ import whoRima from './home-who-rima-is-01.svg';
 import is from './home-who-rima-is-02.svg';
 
 export {
+  mainVisual,
   youtube01,
   youtube02,
   youtube03,
