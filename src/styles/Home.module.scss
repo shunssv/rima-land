@@ -48,7 +48,7 @@
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);
   position: relative;
-  padding: 76% 4% 20%;
+  padding: 20% 4%;
 
   @include m.mq(tab) {
     padding: 350px 4% 100px;
@@ -90,10 +90,18 @@
     }
   }
 
+  .wheel {
+    padding-left: 6%;
+    position: absolute;
+    right: -150px;
+    top: 250px;
+  }
+
   .rimaInformation {
     background-color: var(--background-color-white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
+    margin-top: 750px;
     max-width: 800px;
     padding: 2em;
     width: 100%;

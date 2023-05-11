@@ -28,8 +28,8 @@ import {
   redCheckeredPattern,
   whoRima,
   is,
+  wheelBackground,
 } from '@/assets/';
-
 
 export default function Home() {
   return (
@@ -51,7 +51,7 @@ export default function Home() {
           <p className={styles.text}>WithUにて運営しております。</p>
         </div>
       </div>
-      
+
       <section className={styles.whoRimaIsContainer}>
         <h2 className={styles.title}>
           <Image
@@ -69,9 +69,23 @@ export default function Home() {
             priority
           />
         </h2>
+        <div className={styles.wheel}>
+          <Image
+            src={wheelBackground}
+            alt=""
+            sizes="100vw"
+            priority
+          />
+        </div>
         <div className={styles.rimaInformation}>
-          <p>ソニーミュージック・JYP合同オーディションプロジェクト「Nizi Project」より1万人の中から選ばれ構成されたガールズグループ「NiziU」のメンバーの一人。</p>
-          <p>RIMAは主にラップを担当。時にラップを作詞する本格派。 また、日本語と英語、韓国語が堪能で世界へ発信する要となっています。</p>
+          <p>
+            ソニーミュージック・JYP合同オーディションプロジェクト「Nizi
+            Project」より1万人の中から選ばれ構成されたガールズグループ「NiziU」のメンバーの一人。
+          </p>
+          <p>
+            RIMAは主にラップを担当。時にラップを作詞する本格派。
+            また、日本語と英語、韓国語が堪能で世界へ発信する要となっています。
+          </p>
           <div className={styles.rimaProfile}>
             <dl className={styles.profileItem}>
               <dt className={styles.profileBadge}>NAME</dt>
@@ -91,40 +105,41 @@ export default function Home() {
             </dl>
             <dl className={styles.profileItem}>
               <dt className={styles.profileBadge}>NIZOO*</dt>
-              <dd className={styles.profileDetail}>Llanu<span>*NiziU Official Characters</span></dd>
+              <dd className={styles.profileDetail}>
+                Llanu<span>*NiziU Official Characters</span>
+              </dd>
             </dl>
           </div>
         </div>
       </section>
 
-
       <section className={styles.rimaIsLovelyContainer}></section>
-      
+
       <BlackCheckeredPattern />
 
       <section className={styles.rimaniaContainer}>
-          <h2 className={styles.title}>
-            <Image
-              src={rimania}
-              alt="Rimania!"
-              sizes="100vw"
-              className={styles.titleImage}
-              priority
-            />
-          </h2>
-          <div className={styles.rimaniaMainContent}>
-            <p>COMING SOON!</p>
-          </div>
-      </section>
-      
-      <div className={styles.redCheckeredPatternContainer}>
-        <Image
-            src={redCheckeredPattern}
-            alt=""
+        <h2 className={styles.title}>
+          <Image
+            src={rimania}
+            alt="Rimania!"
             sizes="100vw"
-            className={`${styles.redCheckeredPattern} ${styles.isFlip}`}
+            className={styles.titleImage}
             priority
           />
+        </h2>
+        <div className={styles.rimaniaMainContent}>
+          <p>COMING SOON!</p>
+        </div>
+      </section>
+
+      <div className={styles.redCheckeredPatternContainer}>
+        <Image
+          src={redCheckeredPattern}
+          alt=""
+          sizes="100vw"
+          className={`${styles.redCheckeredPattern} ${styles.isFlip}`}
+          priority
+        />
       </div>
 
       <section className={styles.learnHerMoreContainer}>
@@ -279,7 +294,11 @@ export default function Home() {
           </ul>
           <ul className={styles.officialSNSList} role="list">
             <li>
-              <a href="https://www.instagram.com/niziu_info_official/" target="_blank" rel="noopener">
+              <a
+                href="https://www.instagram.com/niziu_info_official/"
+                target="_blank"
+                rel="noopener"
+              >
                 <Image
                   src={instagram}
                   alt="NiziU @niziu_info_official | Instagram"
@@ -290,7 +309,11 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a href="https://www.tiktok.com/@niziu_official" target="_blank" rel="noopener">
+              <a
+                href="https://www.tiktok.com/@niziu_official"
+                target="_blank"
+                rel="noopener"
+              >
                 <Image
                   src={tiktok}
                   alt="NiziU @niziu_official | Tiktok"
@@ -301,7 +324,11 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a href="https://twitter.com/NiziU__official" target="_blank" rel="noopener">
+              <a
+                href="https://twitter.com/NiziU__official"
+                target="_blank"
+                rel="noopener"
+              >
                 <Image
                   src={twitter}
                   alt="NiziU @NiziU__official | Twitter"
@@ -323,7 +350,11 @@ export default function Home() {
               </a>
             </li>
             <li>
-              <a href="https://www.facebook.com/NiziUinfoofficial" target="_blank" rel="noopener">
+              <a
+                href="https://www.facebook.com/NiziUinfoofficial"
+                target="_blank"
+                rel="noopener"
+              >
                 <Image
                   src={facebook}
                   alt="NiziU Official | facebook"
