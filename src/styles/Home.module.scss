@@ -21,6 +21,9 @@
     @include m.mq(tab) {
       width: 70%;
     }
+    @include m.mq(pc) {
+      width: 840px;
+    }
   }
 }
 

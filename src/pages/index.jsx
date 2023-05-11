@@ -2,10 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
 import { HomeLayout } from '@/components/Layout/HomeLayout';
-import mainVisual from '@/assets/home-mv.svg';
 import Link from 'next/link';
 import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import {
+  mainVisual,
   youtube01,
   youtube02,
   youtube03,
