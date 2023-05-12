@@ -74,6 +74,7 @@ export default function Home() {
             src={wheelBackground}
             alt=""
             sizes="100vw"
+            className={styles.wheelBackground}
             priority
           />
         </div>
