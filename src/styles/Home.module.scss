@@ -47,13 +47,14 @@
   background-color: var(--background-color-white);
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);
-  position: relative;
   padding: 20% 4%;
+  position: relative;
 
   @include m.mq(tab) {
-    padding: 350px 4% 100px;
+    padding: 91% 4% 100px;
   }
   @include m.mq(pc) {
+    height: 1200px;
     padding: 450px 4% 150px;
   }
 
@@ -63,8 +64,8 @@
     left: 4%;
 
     @include m.mq(tabAndPc) {
-      display: flex;
       align-items: flex-end;
+      display: flex;
       gap: 0.5em;
     }
 
@@ -81,8 +82,8 @@
     }
 
     .titleIsImage {
-      margin-top: 5%;
       margin-left: 2%;
+      margin-top: 5%;
 
       @include m.mq(tabAndPc) {
         width: 25%;
@@ -95,14 +96,32 @@
     position: absolute;
     right: -150px;
     top: 250px;
+
+    @include m.mq(tab) {
+      right: -250px;
+      top: 350px;
+    }
+    @include m.mq(pc) {
+      right: -500px;
+      top: -50px;
+    }
+
+    .wheelBackground {
+      @include m.mq(tab) {
+        width: 1200px;
+      }
+      @include m.mq(pc) {
+        width: 1348px;
+      }
+    }
   }
 
   .rimaInformation {
     background-color: var(--background-color-white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    margin-top: 750px;
-    max-width: 800px;
+    margin-top: 60px;
+    max-width: 600px;
     padding: 2em;
     width: 100%;
 
@@ -112,10 +131,10 @@
   }
   
   .rimaProfile {
-    margin-top: 2em;
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    margin-top: 2em;
     
     .profileItem {
       align-items: center;
@@ -128,10 +147,10 @@
       color: #fff;
       display: block;
       font-weight: bold;
-      padding: 0.25em 1em;
       max-width: 100px;
-      width: 100%;
+      padding: 0.25em 1em;
       text-align: center;
+      width: 100%;
 
       @include m.mq(sp) {
         border-radius: 15px;
