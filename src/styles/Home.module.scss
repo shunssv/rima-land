@@ -120,10 +120,14 @@
     background-color: var(--background-color-white);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
-    margin-top: 60px;
+    margin-top: 750px;
     max-width: 600px;
     padding: 2em;
     width: 100%;
+
+    @include m.mq(tabAndPc) {
+      margin-top: 60px;
+    }
 
     p + p {
       margin-top: 1em;
