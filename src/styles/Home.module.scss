@@ -51,7 +51,8 @@
   position: relative;
 
   @include m.mq(tab) {
-    padding: 91% 4% 100px;
+    height: 2000px;
+    padding: 1400px 4% 100px;
   }
   @include m.mq(pc) {
     height: 1200px;
@@ -92,18 +93,18 @@
   }
 
   .wheel {
-    padding-left: 6%;
+    padding-left: 4%;
     position: absolute;
     right: -150px;
-    top: 250px;
+    top: 200px;
 
     @include m.mq(tab) {
       right: -250px;
-      top: 350px;
+      top: 300px;
     }
     @include m.mq(pc) {
-      right: -500px;
-      top: -50px;
+      right: -420px;
+      top: -150px;
     }
 
     .wheelBackground {
@@ -113,6 +114,11 @@
       @include m.mq(pc) {
         width: 1348px;
       }
+    }
+
+    .wheelItem {
+      transform: rotate(-10deg);
+      width: 180px !important;
     }
   }
 

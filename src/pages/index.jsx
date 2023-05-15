@@ -29,6 +29,7 @@ import {
   whoRima,
   is,
   wheelBackground,
+  wheelItemInternational,
 } from '@/assets/';
 
 export default function Home() {
@@ -77,6 +78,15 @@ export default function Home() {
             className={styles.wheelBackground}
             priority
           />
+          <figure className={styles.wheelItemWrapper}>
+            <Image
+              src={wheelItemInternational}
+              alt="International"
+              fill
+              className={styles.wheelItem}
+              priority
+            />
+          </figure>
         </div>
         <div className={styles.rimaInformation}>
           <p>
