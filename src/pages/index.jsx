@@ -81,8 +81,8 @@ export default function Home() {
           <figure className={styles.wheelItemWrapper}>
             <Image
               src={wheelItemInternational}
-              alt=""
-              sizes="100vw"
+              alt="International"
+              fill
               className={styles.wheelItem}
               priority
             />
