@@ -22,7 +22,7 @@ import blackCheckeredPattern from './checkered-pattern-black.svg';
 import redCheckeredPattern from './checkered-pattern-red.svg';
 import whoRima from './home-who-rima-is-01.svg';
 import is from './home-who-rima-is-02.svg';
-import wheelBackground from './home-wheel-background.png'
+import wheelBackground from './home-wheel-background.svg'
 import wheelItemInternational from './home-wheel-international.svg'
 
 export {
