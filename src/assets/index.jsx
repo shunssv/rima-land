@@ -23,6 +23,7 @@ import redCheckeredPattern from './checkered-pattern-red.svg';
 import whoRima from './home-who-rima-is-01.svg';
 import is from './home-who-rima-is-02.svg';
 import wheelBackground from './home-wheel-background.png'
+import wheelItemInternational from './home-wheel-international.svg'
 
 export {
   mainVisual,
@@ -50,6 +51,7 @@ export {
   whoRima,
   is,
   wheelBackground,
+  wheelItemInternational,
 };
 
 // on jsx file
