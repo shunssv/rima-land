@@ -1,4 +1,4 @@
-import mainVisual from './home-mv.png';
+import mainVisual from './home-mv.svg';
 import youtube01 from './youtube01.jpg';
 import youtube02 from './youtube02.jpg';
 import youtube03 from './youtube03.jpg';
