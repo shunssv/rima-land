@@ -70,7 +70,7 @@ export default function Home() {
             priority
           />
         </h2>
-        <div className={styles.wheel}>
+        <figure className={styles.wheel}>
           <Image
             src={wheelBackground}
             alt=""
@@ -78,16 +78,14 @@ export default function Home() {
             className={styles.wheelBackground}
             priority
           />
-          <figure className={styles.wheelItemWrapper}>
-            <Image
-              src={wheelItemInternational}
-              alt="International"
-              fill
-              className={styles.wheelItem}
-              priority
-            />
-          </figure>
-        </div>
+          <Image
+            src={wheelItemInternational}
+            alt="International"
+            sizes="100vw"
+            className={`${styles.wheelItem} ${styles.international}`}
+            priority
+          />
+        </figure>
         <div className={styles.rimaInformation}>
           <p>
             ソニーミュージック・JYP合同オーディションプロジェクト「Nizi
