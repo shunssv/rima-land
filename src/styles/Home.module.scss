@@ -116,9 +116,15 @@
       }
     }
 
-    .wheelItem {
-      transform: rotate(-10deg);
+    .wheelItemImage {
       width: 30%;
+
+      .international {
+        left: 2%;
+        position: absolute;
+        top: 50%;
+        transform: rotate(-10deg) translateY(-50%);
+      }
     }
   }
 

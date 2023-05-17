@@ -82,7 +82,7 @@ export default function Home() {
             src={wheelItemInternational}
             alt="International"
             sizes="100vw"
-            className={`${styles.wheelItem} ${styles.international}`}
+            className={`${styles.wheelItemImage} ${styles.international}`}
             priority
           />
         </figure>
