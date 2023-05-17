@@ -24,6 +24,8 @@ import whoRima from './home-who-rima-is-01.svg';
 import is from './home-who-rima-is-02.svg';
 import wheelBackground from './home-wheel-background.svg'
 import wheelItemInternational from './home-wheel-international.svg'
+import wheelItemArtist from './home-wheel-artist.svg'
+import wheelItemRapper from './home-wheel-rapper.svg'
 
 export {
   mainVisual,
@@ -52,6 +54,8 @@ export {
   is,
   wheelBackground,
   wheelItemInternational,
+  wheelItemArtist,
+  wheelItemRapper,
 };
 
 // on jsx file
