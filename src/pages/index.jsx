@@ -30,6 +30,8 @@ import {
   is,
   wheelBackground,
   wheelItemInternational,
+  wheelItemArtist,
+  wheelItemRapper,
 } from '@/assets/';
 
 export default function Home() {
@@ -76,6 +78,20 @@ export default function Home() {
             alt=""
             sizes="100vw"
             className={styles.wheelBackground}
+            priority
+          />
+          <Image
+            src={wheelItemArtist}
+            alt="Artist"
+            sizes="100vw"
+            className={`${styles.wheelItemImage} ${styles.artist}`}
+            priority
+          />
+          <Image
+            src={wheelItemRapper}
+            alt="Rapper"
+            sizes="100vw"
+            className={`${styles.wheelItemImage} ${styles.rapper}`}
             priority
           />
           <Image

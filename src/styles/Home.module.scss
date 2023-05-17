@@ -117,11 +117,23 @@
     }
 
     .wheelItemImage {
+      position: absolute;
       width: 30%;
 
+      &.artist {
+        right: 30%;
+        top: 5%;
+        transform: rotate(-5deg);
+      }
+
+      &.rapper {
+        left: 10%;
+        top: 15%;
+        transform: rotate(-10deg);
+      }
+      
       &.international {
         left: 2%;
-        position: absolute;
         top: 50%;
         transform: rotate(-10deg) translateY(-50%);
       }
