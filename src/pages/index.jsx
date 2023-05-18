@@ -32,6 +32,8 @@ import {
   wheelItemInternational,
   wheelItemArtist,
   wheelItemRapper,
+  wheelItemPhotogenic,
+  wheelItemFoodie,
 } from '@/assets/';
 
 export default function Home() {
@@ -99,6 +101,20 @@ export default function Home() {
             alt="International"
             sizes="100vw"
             className={`${styles.wheelItemImage} ${styles.international}`}
+            priority
+          />
+          <Image
+            src={wheelItemFoodie}
+            alt="Foodie"
+            sizes="100vw"
+            className={`${styles.wheelItemImage} ${styles.foodie}`}
+            priority
+          />
+          <Image
+            src={wheelItemPhotogenic}
+            alt="Photogenic"
+            sizes="100vw"
+            className={`${styles.wheelItemImage} ${styles.photogenic}`}
             priority
           />
         </figure>

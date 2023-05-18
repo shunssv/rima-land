@@ -134,8 +134,20 @@
       
       &.international {
         left: 2%;
-        top: 50%;
-        transform: rotate(-10deg) translateY(-50%);
+        top: 49%;
+        transform: rotate(-10deg) translateY(-49%);
+      }
+
+      &.foodie {
+        bottom: 16%;
+        left: 11%;
+        transform: rotate(-5deg);
+      }
+
+      &.photogenic {
+        bottom: 0;
+        right: 29%;
+        transform: rotate(-10deg);
       }
     }
   }
