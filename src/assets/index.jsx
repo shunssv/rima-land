@@ -26,6 +26,8 @@ import wheelBackground from './home-wheel-background.svg'
 import wheelItemInternational from './home-wheel-international.svg'
 import wheelItemArtist from './home-wheel-artist.svg'
 import wheelItemRapper from './home-wheel-rapper.svg'
+import wheelItemPhotogenic from './home-wheel-photogenic.svg'
+import wheelItemFoodie from './home-wheel-foodie.svg'
 
 export {
   mainVisual,
@@ -56,6 +58,8 @@ export {
   wheelItemInternational,
   wheelItemArtist,
   wheelItemRapper,
+  wheelItemPhotogenic,
+  wheelItemFoodie,
 };
 
 // on jsx file
