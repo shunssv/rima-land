@@ -210,11 +210,7 @@
 }
 
 .rimaIsLovelyContainer {
-  margin-top: 20%;
-
-  @include m.mq(tabAndPc) {
-    margin-top: 10%;
-  }
+  margin-top: 65%;
 }
 
 .rimaniaContainer {
@@ -278,6 +274,25 @@
 }
 
 .redCheckeredPatternContainer {
+  margin-left: calc(((100vw - 100%) / 2) * -1);
+  position: relative;
+  
+  .redCheckeredPattern {
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    top: -25px;
+
+    @include m.mq(tab) {
+      top: -50px;
+    }
+    @include m.mq(pc) {
+      top: -150px;
+    }
+  }
+}
+
+.redCheckeredPatternContainer.isFlip {
   margin: 15% calc(((100vw - 100%) / 2) * -1) 0 0;
   
   @include m.mq(tab) {
@@ -288,7 +303,7 @@
     position: relative;
   }
   
-  .redCheckeredPattern.isFlip {
+  .redCheckeredPattern {
     margin-left: auto;
     transform: scale(-1,1);
 
@@ -298,7 +313,6 @@
       top: 145px;
     }
   }
-
 }
 
 .learnHerMoreContainer {
