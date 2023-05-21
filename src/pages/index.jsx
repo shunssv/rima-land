@@ -183,7 +183,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={`${styles.redCheckeredPatternContainer} ${styles.isFlip}`}>
+      <div className={styles.redCheckeredPatternContainerIsFlip}>
         <Image
           src={redCheckeredPattern}
           alt=""
