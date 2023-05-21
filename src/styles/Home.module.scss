@@ -276,7 +276,7 @@
 .redCheckeredPatternContainer {
   margin-left: calc(((100vw - 100%) / 2) * -1);
   position: relative;
-  
+
   .redCheckeredPattern {
     margin-right: auto;
     position: absolute;
@@ -292,7 +292,7 @@
   }
 }
 
-.redCheckeredPatternContainer.isFlip {
+.redCheckeredPatternContainerIsFlip {
   margin: 15% calc(((100vw - 100%) / 2) * -1) 0 0;
   
   @include m.mq(tab) {
