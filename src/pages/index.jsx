@@ -154,6 +154,16 @@ export default function Home() {
         </div>
       </section>
 
+      <div className={styles.redCheckeredPatternContainer}>
+        <Image
+          src={redCheckeredPattern}
+          alt=""
+          sizes="100vw"
+          className={`${styles.redCheckeredPattern}`}
+          priority
+        />
+      </div>
+
       <section className={styles.rimaIsLovelyContainer}></section>
 
       <BlackCheckeredPattern />
@@ -173,12 +183,12 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.redCheckeredPatternContainer}>
+      <div className={`${styles.redCheckeredPatternContainer} ${styles.isFlip}`}>
         <Image
           src={redCheckeredPattern}
           alt=""
           sizes="100vw"
-          className={`${styles.redCheckeredPattern} ${styles.isFlip}`}
+          className={styles.redCheckeredPattern}
           priority
         />
       </div>
