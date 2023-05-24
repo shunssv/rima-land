@@ -34,6 +34,7 @@ import {
   wheelItemRapper,
   wheelItemPhotogenic,
   wheelItemFoodie,
+  rimaIsLovelyRoof,
 } from '@/assets/';
 
 export default function Home() {
@@ -164,7 +165,14 @@ export default function Home() {
         />
       </div>
 
-      <section className={styles.rimaIsLovelyContainer}></section>
+      <section className={styles.rimaIsLovelyContainer}>
+        <Image
+          src={rimaIsLovelyRoof}
+          alt=""
+          sizes="100vw"
+          priority
+        />
+      </section>
 
       <BlackCheckeredPattern />
 

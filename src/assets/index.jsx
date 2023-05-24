@@ -28,6 +28,7 @@ import wheelItemArtist from './home-wheel-artist.svg'
 import wheelItemRapper from './home-wheel-rapper.svg'
 import wheelItemPhotogenic from './home-wheel-photogenic.svg'
 import wheelItemFoodie from './home-wheel-foodie.svg'
+import rimaIsLovelyRoof from './home-rima-is-lovely-roof.svg'
 
 export {
   mainVisual,
@@ -60,6 +61,7 @@ export {
   wheelItemRapper,
   wheelItemPhotogenic,
   wheelItemFoodie,
+  rimaIsLovelyRoof,
 };
 
 // on jsx file
