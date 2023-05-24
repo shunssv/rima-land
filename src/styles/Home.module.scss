@@ -211,6 +211,10 @@
 
 .rimaIsLovelyContainer {
   margin-top: 65%;
+
+  @include m.mq(tabAndPc) {
+    margin-top: 40%;
+  }
 }
 
 .rimaniaContainer {
