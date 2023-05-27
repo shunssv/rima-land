@@ -59,8 +59,12 @@ export default function Disclaimer() {
         </dl>
         
         <dl className={styles.disclaimerItem}>
-          <dt className={styles.heading}>免責事項見出しが入ります</dt>
-          <dd className={styles.detail}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章</dd>
+          <dt className={styles.heading}>Googleアナリティクスについて</dt>
+          <dd className={styles.detail}>
+            当サイトでは、より良いサービスの提供とサイトの使いやすさ向上を目的として、サイト利用状況のトラフィックデータ収集と解析のために「Google アナリティクス」を使用しています。<br />
+            Google アナリティクスは、トラフィックデータの収集のためにCookieを使用しています。Cookieを通じて得たトラフィックデータは個人を特定するものではありません。<br />
+            収集されたトラフィックデータはGoogleのプライバシーポリシーにおいて管理されます。<br />
+            <a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener">https://policies.google.com/technologies/partner-sites?hl=ja</a></dd>
         </dl>
         
       </section>
