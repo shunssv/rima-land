@@ -35,6 +35,7 @@ import {
   wheelItemPhotogenic,
   wheelItemFoodie,
   rimaIsLovelyRoof,
+  rimaIsLovelyCreative,
 } from '@/assets/';
 
 export default function Home() {
@@ -166,15 +167,12 @@ export default function Home() {
       </div>
 
       <section className={styles.rimaIsLovelyContainer}>
-        <Image
-          src={rimaIsLovelyRoof}
-          alt=""
-          sizes="100vw"
-          priority
-        />
+        <Image src={rimaIsLovelyRoof} alt="" sizes="100vw" priority />
         <div>
           <dl>
-            <dt>Creative</dt>
+            <dt>
+              <Image src={rimaIsLovelyCreative} alt="" sizes="100vw" priority />
+            </dt>
             <dd>
               RIMAは他にはない独特な感性の持ち主。
               ラップを作詞するだけではなく、キャラクター「ぴーぬ」を描いたり、「わっぴー」や「まじ人生」など独自の言語（RIMAN）を作ったりとクリエイティブな側面があります。
@@ -186,13 +184,17 @@ export default function Home() {
           <dl>
             <dt>Diligent</dt>
             <dd>
-              「ラップ圧倒的！」「かわいい！」だけではないのがRIMA。 プライベートでは勤勉な一面があります。 それはNIziUメンバーが評するほど。NiziU関連の活動や練習がある中、勉強に時間を割いているストイックさには頭が下がります。
+              「ラップ圧倒的！」「かわいい！」だけではないのがRIMA。
+              プライベートでは勤勉な一面があります。
+              それはNIziUメンバーが評するほど。NiziU関連の活動や練習がある中、勉強に時間を割いているストイックさには頭が下がります。
             </dd>
           </dl>
           <dl>
             <dt>Friendly</dt>
             <dd>
-              美貌の裏は甘えん坊で可愛らしいRIMA。 人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性が、人を惹き寄せていると思います。 美と愛嬌の絶妙なギャップさがRIMAの一つの魅力。
+              美貌の裏は甘えん坊で可愛らしいRIMA。
+              人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性が、人を惹き寄せていると思います。
+              美と愛嬌の絶妙なギャップさがRIMAの一つの魅力。
             </dd>
           </dl>
         </div>
