@@ -36,6 +36,7 @@ import {
   wheelItemFoodie,
   rimaIsLovelyRoof,
   rimaIsLovelyCreative,
+  rimaIsLovelyDiligent,
 } from '@/assets/';
 
 export default function Home() {
@@ -171,7 +172,7 @@ export default function Home() {
         <div>
           <dl>
             <dt>
-              <Image src={rimaIsLovelyCreative} alt="" sizes="100vw" priority />
+              <Image src={rimaIsLovelyCreative} alt="Creative" sizes="100vw" priority />
             </dt>
             <dd>
               RIMAは他にはない独特な感性の持ち主。
@@ -182,7 +183,9 @@ export default function Home() {
             </dd>
           </dl>
           <dl>
-            <dt>Diligent</dt>
+            <dt>
+              <Image src={rimaIsLovelyDiligent} alt="Diligent" sizes="100vw" priority />
+            </dt>
             <dd>
               「ラップ圧倒的！」「かわいい！」だけではないのがRIMA。
               プライベートでは勤勉な一面があります。
