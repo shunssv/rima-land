@@ -30,6 +30,7 @@ import wheelItemPhotogenic from './home-wheel-photogenic.svg'
 import wheelItemFoodie from './home-wheel-foodie.svg'
 import rimaIsLovelyRoof from './home-rima-is-lovely-roof.svg'
 import rimaIsLovelyCreative from './home-rima-is-lovely-creative.svg'
+import rimaIsLovelyDiligent from './home-rima-is-lovely-diligent.svg'
 
 export {
   mainVisual,
@@ -64,6 +65,7 @@ export {
   wheelItemFoodie,
   rimaIsLovelyRoof,
   rimaIsLovelyCreative,
+  rimaIsLovelyDiligent,
 };
 
 // on jsx file
