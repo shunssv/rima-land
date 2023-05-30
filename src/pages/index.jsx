@@ -37,6 +37,7 @@ import {
   rimaIsLovelyRoof,
   rimaIsLovelyCreative,
   rimaIsLovelyDiligent,
+  rimaIsLovelyFriendly,
 } from '@/assets/';
 
 export default function Home() {
@@ -193,7 +194,7 @@ export default function Home() {
             </dd>
           </dl>
           <dl>
-            <dt>Friendly</dt>
+            <dt><Image src={rimaIsLovelyFriendly} alt="Friendly" sizes="100vw" priority /></dt>
             <dd>
               美貌の裏は甘えん坊で可愛らしいRIMA。
               人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性が、人を惹き寄せていると思います。
