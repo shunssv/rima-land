@@ -32,6 +32,7 @@ import rimaIsLovelyRoof from './home-rima-is-lovely-roof.svg'
 import rimaIsLovelyCreative from './home-rima-is-lovely-creative.svg'
 import rimaIsLovelyDiligent from './home-rima-is-lovely-diligent.svg'
 import rimaIsLovelyFriendly from './home-rima-is-lovely-friendly.svg'
+import rimaIsLovely from './home-rima-is-lovely.svg'
 
 export {
   mainVisual,
@@ -68,6 +69,7 @@ export {
   rimaIsLovelyCreative,
   rimaIsLovelyDiligent,
   rimaIsLovelyFriendly,
+  rimaIsLovely,
 };
 
 // on jsx file
