@@ -35,7 +35,9 @@ export default function Disclaimer() {
           />
         </h2>
 
-        <p className={styles.introduction}>この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れてい</p>
+        <p className={styles.introduction}>
+          本サイトの免責事項について記載しております。
+        </p>
 
         <dl className={styles.disclaimerItem}>
           <dt className={styles.heading}>免責事項</dt>
