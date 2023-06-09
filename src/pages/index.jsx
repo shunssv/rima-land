@@ -162,7 +162,7 @@ export default function Home() {
       <div className={styles.redCheckeredPatternContainer}>
         <Image
           src={redCheckeredPattern}
-          alt=""
+          alt="Red checkered pattern image"
           sizes="100vw"
           className={`${styles.redCheckeredPattern}`}
           priority
@@ -227,7 +227,7 @@ export default function Home() {
       <div className={styles.redCheckeredPatternContainerIsFlip}>
         <Image
           src={redCheckeredPattern}
-          alt=""
+          alt="Red checkered pattern image"
           sizes="100vw"
           className={styles.redCheckeredPattern}
           priority
