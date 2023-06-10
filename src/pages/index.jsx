@@ -82,7 +82,7 @@ export default function Home() {
         <figure className={styles.wheel}>
           <Image
             src={wheelBackground}
-            alt=""
+            alt="wheel background"
             sizes="100vw"
             className={styles.wheelBackground}
             priority
@@ -171,7 +171,7 @@ export default function Home() {
 
       <section className={styles.rimaIsLovelyContainer}>
 
-        <Image src={rimaIsLovelyRoof} alt="" sizes="100vw" priority />
+        <Image src={rimaIsLovelyRoof} alt="roof image" sizes="100vw" priority />
         <Image src={rimaIsLovely} alt="RIMA is weird but LOVELY" sizes="100vw" priority />
         <div>
           <dl>
