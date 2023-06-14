@@ -217,6 +217,28 @@
   }
 }
 
+.rimaIsLovelyItemsContainer {
+  display: block;
+  
+  @include m.mq(tabAndPc) {
+    display: flex;
+  }
+
+  .rimaIsLovelyItem {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @include m.mq(tabAndPc) {
+      flex-basis: calc(100% / 3);
+    }
+
+    dd {
+      color: var(--font-color-white);
+    }
+  }
+}
+
 .rimaniaContainer {
   background: url('../assets/home-rimania-background-01.svg') center center / cover no-repeat;
   display: flex;

@@ -173,8 +173,8 @@ export default function Home() {
 
         <Image src={rimaIsLovelyRoof} alt="roof image" sizes="100vw" priority />
         <Image src={rimaIsLovely} alt="RIMA is weird but LOVELY" sizes="100vw" priority />
-        <div>
-          <dl>
+        <div className={styles.rimaIsLovelyItemsContainer}>
+          <dl className={styles.rimaIsLovelyItem}>
             <dt>
               <Image src={rimaIsLovelyCreative} alt="Creative" sizes="100vw" priority />
             </dt>
@@ -186,7 +186,7 @@ export default function Home() {
               RIMAの言動には日々いい刺激を受けています。
             </dd>
           </dl>
-          <dl>
+          <dl className={styles.rimaIsLovelyItem}>
             <dt>
               <Image src={rimaIsLovelyDiligent} alt="Diligent" sizes="100vw" priority />
             </dt>
@@ -196,7 +196,7 @@ export default function Home() {
               それはNIziUメンバーが評するほど。NiziU関連の活動や練習がある中、勉強に時間を割いているストイックさには頭が下がります。
             </dd>
           </dl>
-          <dl>
+          <dl className={styles.rimaIsLovelyItem}>
             <dt><Image src={rimaIsLovelyFriendly} alt="Friendly" sizes="100vw" priority /></dt>
             <dd>
               美貌の裏は甘えん坊で可愛らしいRIMA。
