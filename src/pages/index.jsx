@@ -39,6 +39,7 @@ import {
   rimaIsLovelyDiligent,
   rimaIsLovelyFriendly,
   rimaIsLovely,
+  rimaIsLovelyBecause,
 } from '@/assets/';
 
 export default function Home() {
@@ -172,6 +173,7 @@ export default function Home() {
       <section className={styles.rimaIsLovelyContainer}>
 
         <Image src={rimaIsLovelyRoof} alt="roof image" sizes="100vw" priority />
+        <Image src={rimaIsLovelyBecause} alt="because image" sizes="100vw" priority />
         <Image src={rimaIsLovely} alt="RIMA is weird but LOVELY" sizes="100vw" priority />
         <div className={styles.rimaIsLovelyItemsContainer}>
           <dl className={styles.rimaIsLovelyItem}>
