@@ -33,6 +33,7 @@ import rimaIsLovelyCreative from './home-rima-is-lovely-creative.svg'
 import rimaIsLovelyDiligent from './home-rima-is-lovely-diligent.svg'
 import rimaIsLovelyFriendly from './home-rima-is-lovely-friendly.svg'
 import rimaIsLovely from './home-rima-is-lovely.svg'
+import rimaIsLovelyBecause from './home-rima-is-lovely-because.svg'
 
 export {
   mainVisual,
@@ -70,6 +71,7 @@ export {
   rimaIsLovelyDiligent,
   rimaIsLovelyFriendly,
   rimaIsLovely,
+  rimaIsLovelyBecause,
 };
 
 // on jsx file
