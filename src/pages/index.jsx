@@ -171,14 +171,37 @@ export default function Home() {
       </div>
 
       <section className={styles.rimaIsLovelyContainer}>
-
-        <Image src={rimaIsLovelyRoof} alt="roof image" sizes="100vw" priority />
-        <Image src={rimaIsLovelyBecause} alt="because image" sizes="100vw" priority />
-        <Image src={rimaIsLovely} alt="RIMA is weird but LOVELY" sizes="100vw" priority />
+        <div className={styles.roofWrapper}>
+          <Image
+            src={rimaIsLovelyRoof}
+            alt="roof image"
+            sizes="100vw"
+            priority
+          />
+          <Image
+            src={rimaIsLovelyBecause}
+            alt="because image"
+            sizes="100vw"
+            className={styles.rimaIsLovelyBecause}
+            priority
+          />
+          <Image
+            src={rimaIsLovely}
+            alt="RIMA is weird but LOVELY"
+            sizes="100vw"
+            className={styles.rimaIsLovely}
+            priority
+          />
+        </div>
         <div className={styles.rimaIsLovelyItemsContainer}>
           <dl className={styles.rimaIsLovelyItem}>
             <dt>
-              <Image src={rimaIsLovelyCreative} alt="Creative" sizes="100vw" priority />
+              <Image
+                src={rimaIsLovelyCreative}
+                alt="Creative"
+                sizes="100vw"
+                priority
+              />
             </dt>
             <dd>
               RIMAは他にはない独特な感性の持ち主。
@@ -190,7 +213,12 @@ export default function Home() {
           </dl>
           <dl className={styles.rimaIsLovelyItem}>
             <dt>
-              <Image src={rimaIsLovelyDiligent} alt="Diligent" sizes="100vw" priority />
+              <Image
+                src={rimaIsLovelyDiligent}
+                alt="Diligent"
+                sizes="100vw"
+                priority
+              />
             </dt>
             <dd>
               「ラップ圧倒的！」「かわいい！」だけではないのがRIMA。
@@ -199,7 +227,14 @@ export default function Home() {
             </dd>
           </dl>
           <dl className={styles.rimaIsLovelyItem}>
-            <dt><Image src={rimaIsLovelyFriendly} alt="Friendly" sizes="100vw" priority /></dt>
+            <dt>
+              <Image
+                src={rimaIsLovelyFriendly}
+                alt="Friendly"
+                sizes="100vw"
+                priority
+              />
+            </dt>
             <dd>
               美貌の裏は甘えん坊で可愛らしいRIMA。
               人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性が、人を惹き寄せていると思います。

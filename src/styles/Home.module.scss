@@ -210,10 +210,27 @@
 }
 
 .rimaIsLovelyContainer {
-  margin-top: 65%;
+  margin-top: 50%;
+
+  .roofWrapper {
+    position: relative;
+
+    .rimaIsLovelyBecause {
+      margin: 10px auto;
+      width: 90%;
+    }
+
+    .rimaIsLovely {
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+    }
+  }
 
   @include m.mq(tabAndPc) {
-    margin-top: 40%;
+    margin-top: 30%;
   }
 }
 
@@ -228,13 +245,25 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+    padding: 0 10%;
 
     @include m.mq(tabAndPc) {
       flex-basis: calc(100% / 3);
     }
 
+    dt {
+      img {
+        width: 85%;
+        margin: 20px auto;
+      }
+    }
+
     dd {
       color: var(--font-color-white);
+    }
+
+    &:last-of-type {
+      margin-bottom: 90px;
     }
   }
 }
