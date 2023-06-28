@@ -216,16 +216,16 @@
     position: relative;
 
     .rimaIsLovelyBecause {
-      margin: 10px auto;
+      margin: 20px auto 10px;
       width: 90%;
     }
 
     .rimaIsLovely {
       position: absolute;
-      bottom: 15px;
+      bottom: 25px;
       left: 50%;
       transform: translateX(-50%);
-      width: 70%;
+      width: 80%;
     }
   }
 
@@ -236,6 +236,7 @@
 
 .rimaIsLovelyItemsContainer {
   display: block;
+  padding: 60px 0;
   
   @include m.mq(tabAndPc) {
     display: flex;
@@ -251,19 +252,21 @@
       flex-basis: calc(100% / 3);
     }
 
-    dt {
-      img {
-        width: 85%;
-        margin: 20px auto;
-      }
+    &:not(:first-of-type) {
+      margin-top: 50px;
+    }
+    
+    &:last-of-type {
+      margin-bottom: 90px;
+    }
+
+    .rimaIsLovelyItemImage {
+      margin: 0 auto 20px;
+      width: 70%;
     }
 
     dd {
       color: var(--font-color-white);
-    }
-
-    &:last-of-type {
-      margin-bottom: 90px;
     }
   }
 }

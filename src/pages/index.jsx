@@ -200,6 +200,7 @@ export default function Home() {
                 src={rimaIsLovelyCreative}
                 alt="Creative"
                 sizes="100vw"
+                className={styles.rimaIsLovelyItemImage}
                 priority
               />
             </dt>
@@ -217,6 +218,7 @@ export default function Home() {
                 src={rimaIsLovelyDiligent}
                 alt="Diligent"
                 sizes="100vw"
+                className={styles.rimaIsLovelyItemImage}
                 priority
               />
             </dt>
@@ -232,6 +234,7 @@ export default function Home() {
                 src={rimaIsLovelyFriendly}
                 alt="Friendly"
                 sizes="100vw"
+                className={styles.rimaIsLovelyItemImage}
                 priority
               />
             </dt>
