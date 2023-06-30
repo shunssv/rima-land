@@ -236,7 +236,7 @@
 
 .rimaIsLovelyItemsContainer {
   display: block;
-  padding: 60px 0;
+  padding: 10px 0;
   
   @include m.mq(tabAndPc) {
     display: flex;
@@ -246,18 +246,20 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 0 10%;
+    padding: 70px 10%;
+    background: url('../assets/home-rima-is-lovely-background.svg') center / 90% no-repeat;
+    min-height: 450px;
 
     @include m.mq(tabAndPc) {
       flex-basis: calc(100% / 3);
     }
 
     &:not(:first-of-type) {
-      margin-top: 50px;
+      margin-top: 20px;
     }
     
     &:last-of-type {
-      margin-bottom: 90px;
+      margin-bottom: 40px;
     }
 
     .rimaIsLovelyItemImage {
