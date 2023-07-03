@@ -244,11 +244,11 @@
 
   .rimaIsLovelyItem {
     align-items: center;
+    background: url('../assets/home-rima-is-lovely-background.svg') center / 90% no-repeat;
     display: flex;
     flex-direction: column;
-    padding: 70px 10%;
-    background: url('../assets/home-rima-is-lovely-background.svg') center / 90% no-repeat;
     min-height: 450px;
+    padding: 70px 10%;
 
     @include m.mq(tabAndPc) {
       flex-basis: calc(100% / 3);
