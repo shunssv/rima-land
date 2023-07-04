@@ -8,7 +8,7 @@ export function Footer() {
       <ul role="list" className={styles.footerLinkList}>
         <li>
           <a
-            href="https://www.example.com"
+            href="https://twitter.com/RimaLandByWithU"
             target="_blank"
             rel="noopener noreferrer"
           >
