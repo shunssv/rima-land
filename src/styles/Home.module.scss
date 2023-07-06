@@ -240,6 +240,8 @@
   
   @include m.mq(tabAndPc) {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .rimaIsLovelyItem {
@@ -251,11 +253,21 @@
     padding: 70px 10%;
 
     @include m.mq(tabAndPc) {
+      padding: 76px 15px;
+    }
+    @include m.mq(tab) {
+      flex-basis: 45%;
+    }
+    @include m.mq(pc) {
       flex-basis: calc(100% / 3);
     }
 
     &:not(:first-of-type) {
       margin-top: 20px;
+
+      @include m.mq(tabAndPc) {
+        margin-top: 0;
+      }
     }
     
     &:last-of-type {
