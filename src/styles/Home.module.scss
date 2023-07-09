@@ -212,12 +212,22 @@
 .rimaIsLovelyContainer {
   margin-top: 50%;
 
+  @include m.mq(tab) {
+    margin-top: 40%;
+  }
+  @include m.mq(pc) {
+    margin-top: -5%;
+  }
+
   .roofWrapper {
     position: relative;
 
     .rimaIsLovelyBecause {
       margin: 20px auto 10px;
       width: 90%;
+      @include m.mq(pc) {
+        margin: 40px auto 60px;
+      }
     }
 
     .rimaIsLovely {
@@ -229,9 +239,6 @@
     }
   }
 
-  @include m.mq(tabAndPc) {
-    margin-top: 30%;
-  }
 }
 
 .rimaIsLovelyItemsContainer {
@@ -243,6 +250,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  @include m.mq(pc) {
+    margin-bottom: 100px;
+    padding: 0;
+  }
 
   .rimaIsLovelyItem {
     align-items: center;
@@ -252,14 +263,13 @@
     min-height: 450px;
     padding: 70px 10%;
 
-    @include m.mq(tabAndPc) {
-    }
     @include m.mq(tab) {
       flex-basis: 45%;
-      padding: 76px 15px;
+      padding: 76px 30px;
     }
     @include m.mq(pc) {
       flex-basis: calc(100% / 3);
+      height: 100%;
       line-height: 2;
       padding: 76px;
     }
