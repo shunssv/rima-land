@@ -5,6 +5,8 @@
   margin-right: calc(((100vw - 100%) / 2) * -1);
 
   @include m.mq(sp) {
-    width: 272%;
+    width: 312%;
+    margin-left: calc(((100vw - 100%) / 2) * -10);
+    margin-right: calc(((100vw - 100%) / 2) * -10);
   }
 }
