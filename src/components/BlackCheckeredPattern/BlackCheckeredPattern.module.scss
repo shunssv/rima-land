@@ -1,4 +1,10 @@
+@use '@/styles/media-query' as m;
+
 .blackCheckeredImageWrapper {
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);
+
+  @include m.mq(sp) {
+    width: 272%;
+  }
 }
