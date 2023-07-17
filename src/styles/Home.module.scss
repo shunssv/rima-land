@@ -260,8 +260,8 @@
     background: url('../assets/home-rima-is-lovely-background.svg') center / 90% no-repeat;
     display: flex;
     flex-direction: column;
-    min-height: 450px;
-    padding: 70px 10%;
+    min-height: 350px;
+    padding: 55px 10%;
 
     @include m.mq(tab) {
       flex-basis: 45%;
