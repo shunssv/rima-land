@@ -29,10 +29,10 @@ export function Loader() {
         </div>
       ) : (
         <div
-          className={`${styles.loaderContainer} ${styles.isHidden} animate__animated animate__fadeOut animate__slow`}
+          className={`${styles.loaderContainer} ${styles.isHidden}`}
         >
           <div
-            className={`${styles.inner} animate__animated animate__fadeOut animate__faster`}
+            className={`${styles.inner}`}
           >
             <Image
               src="/loader.svg"
