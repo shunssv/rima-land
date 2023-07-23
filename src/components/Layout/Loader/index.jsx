@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import animates from '@/styles/_animation.module.scss';
 import styles from './Loader.module.scss';
 import { useEffect, useState } from 'react';
 
@@ -29,7 +30,7 @@ export function Loader() {
         </div>
       ) : (
         <div
-          className={`${styles.loaderContainer} ${styles.isHidden}`}
+          className={`${styles.loaderContainer} ${styles.isHidden} ${animates.fadeOut} ${animates.durationFaster}`}
         >
           <div
             className={`${styles.inner}`}
