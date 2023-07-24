@@ -58,7 +58,7 @@ export default function Home() {
           priority
         />
         <div className={styles.mainVisualIntroduction}>
-          <p className={styles.text}>RIMA LANDはNiziU RIMAファンサイトです。</p>
+          <p className={styles.text}>本サイトはNiziU RIMA非公式ファンサイトです。</p>
           <p className={styles.text}>WithUにて運営しております。</p>
         </div>
       </div>

@@ -235,7 +235,7 @@
       bottom: 25px;
       left: 50%;
       transform: translateX(-50%);
-      width: 80%;
+      width: 75%;
     }
   }
 
@@ -271,7 +271,7 @@
       flex-basis: calc(100% / 3);
       height: 100%;
       line-height: 2;
-      padding: 76px;
+      padding: 140px 76px;
     }
 
     &:not(:first-of-type) {
@@ -288,11 +288,12 @@
 
     .rimaIsLovelyItemImage {
       margin: 0 auto 20px;
-      width: 70%;
+      width: 90%;
     }
 
     dd {
       color: var(--font-color-white);
+      text-align: center;
     }
   }
 }
