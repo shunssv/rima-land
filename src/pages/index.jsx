@@ -176,6 +176,7 @@ export default function Home() {
             src={rimaIsLovelyRoof}
             alt="roof image"
             sizes="100vw"
+            className={styles.rimaIsLovelyRoof}
             priority
           />
           <Image
