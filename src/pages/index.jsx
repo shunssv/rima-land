@@ -126,12 +126,10 @@ export default function Home() {
         </figure>
         <div className={styles.rimaInformation}>
           <p>
-            ソニーミュージック・JYP合同オーディションプロジェクト「Nizi
-            Project」より1万人の中から選ばれ構成されたガールズグループ「NiziU」のメンバーの一人。
+            ソニーミュージック・JYP合同オーディションプロジェクト「Nizi Project」より1万人の中から選ばれ構成されたガールズグループ「NiziU」のメンバーの一人。
           </p>
           <p>
-            RIMAは主にラップを担当。時にラップを作詞する本格派。
-            また、日本語と英語、韓国語が堪能で世界へ発信する要となっています。
+            RIMAは主にラップを担当。時にラップを作詞する本格派。また、日本語と英語、韓国語が堪能で世界へ発信する要となっています。
           </p>
           <div className={styles.rimaProfile}>
             <dl className={styles.profileItem}>
@@ -222,7 +220,7 @@ export default function Home() {
               />
             </dt>
             <dd>
-              「ラップ圧倒的！」「かわいい！」だけではないのがRIMA。
+              「ラップ」「美貌」だけではないのがRIMA。
               プライベートでは勉強にとても熱心に取り組んでいます。
               それはNIziUメンバーが評するほど。NiziUの活動や練習がある中、勉強に時間を割いているストイックな一面があります。
             </dd>
