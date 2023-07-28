@@ -42,6 +42,10 @@ import {
   rimaIsLovelyBecause,
 } from '@/assets/';
 
+const youtube = [
+  {href: '', badge: '', img: '', alt: ''},
+]
+  
 export default function Home() {
   return (
     <>
