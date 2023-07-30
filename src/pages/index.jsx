@@ -42,10 +42,13 @@ import {
   rimaIsLovelyBecause,
 } from '@/assets/';
 
-const youtube = [
-  {href: '', badge: '', img: '', alt: ''},
+const youtubeVideos = [
+  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.NiziU', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
+  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.NiziU', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
+  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.NiziU', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
+  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.TEST', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
 ]
-  
+
 export default function Home() {
   return (
     <>
@@ -286,6 +289,23 @@ export default function Home() {
           />
         </h2>
         <ul className={styles.youtubeList} role="list">
+          {
+            youtubeVideos.map((youtubeVideo, index) => {
+              return (
+                <li className={styles.item} key={index}>
+                  <a href={youtubeVideo.url} target="_blank">
+                    <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
+                    <Image
+                      src={youtubeVideo.img}
+                      alt={youtubeVideo.alt}
+                      sizes="100vw"
+                      priority
+                    />
+                  </a>
+                </li>
+              )
+            })
+          }
           <li className={styles.item}>
             <a href="https://youtu.be/7FzqKhvgmVY" target="_blank">
               <span className={styles.itemBadge}>To.NiziU</span>
