@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
 import { HomeLayout } from '@/components/Layout/HomeLayout';
-import Link from 'next/link';
 import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import {
   mainVisual,
@@ -42,12 +41,115 @@ import {
   rimaIsLovelyBecause,
 } from '@/assets/';
 
+const rimaProfileItems = [
+  { badge: 'NAME', detail: 'RIMA' },
+  { badge: 'COLOR', detail: 'PANTONE® 200C' },
+  { badge: 'GREETING', detail: 'NiziUの魅力的なボイス' },
+  { badge: 'BORN', detail: 'March 26th, 2004' },
+  { badge: 'NIZOO*', detail: 'Llanu *NiziU Official Characters' },
+];
+
+const rimaIsLovelyItems = [
+  {
+    heading: rimaIsLovelyCreative,
+    alt: 'Creative',
+    description:
+      'RIMAは他にはない独特な感性の持ち主。ラップを作詞するだけではなく、キャラクターを描いたり、独自の言語を作ったりとクリエイティブ。NiziUメンバーやWithUに発信して浸透させる力もあるのも彼女のすごいところ。',
+  },
+  {
+    heading: rimaIsLovelyDiligent,
+    alt: 'Diligent',
+    description:
+      '「ラップ」「美貌」だけではないのがRIMA。プライベートでは勉強にとても熱心に取り組んでいます。それはNIziUメンバーが評するほど。NiziUの活動や練習がある中、勉強に時間を割いているストイックな一面があります。',
+  },
+  {
+    heading: rimaIsLovelyFriendly,
+    alt: 'Friendly',
+    description:
+      '美貌の裏は甘えん坊で可愛らしいRIMA。人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性も人を惹き寄せていると思います。美と愛嬌の絶妙なギャップさがRIMAの一つの魅力。',
+  },
+];
+
 const youtubeVideos = [
-  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.NiziU', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
-  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.NiziU', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
-  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.NiziU', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
-  {url: 'https://youtu.be/7FzqKhvgmVY', badge: 'To.TEST', img: youtube01, alt: 'To.NiziU EP3 RIMA&NINA'},
-]
+  {
+    url: 'https://youtu.be/7FzqKhvgmVY',
+    badge: 'To.NiziU',
+    img: youtube01,
+    alt: 'To.NiziU EP3 RIMA&NINA',
+  },
+  {
+    url: 'https://youtu.be/WXY0uGNi-IA',
+    badge: 'Teaser',
+    img: youtube02,
+    alt: 'NiziU 3rd Single『CLAP CLAP』 RIMA Solo Teaser',
+  },
+  {
+    url: 'https://youtu.be/hHVcOjdQrhs',
+    badge: 'NiziU LOG',
+    img: youtube03,
+    alt: '[NiziU LOG] #33 ミニゲームセンター',
+  },
+  {
+    url: 'https://youtu.be/nCjmXHsRJNY',
+    badge: 'MV',
+    img: youtube04,
+    alt: 'NiziU(니쥬) 1st Album 「Chopstick」 MV',
+  },
+  {
+    url: 'https://youtu.be/M6cfYVKldNk',
+    badge: 'NiziU LOG',
+    img: youtube05,
+    alt: '[NiziU LOG] #9 Tell us! RIMA',
+  },
+  {
+    url: 'https://youtu.be/YrUEPI2Fu8E',
+    badge: 'NiziU LOG',
+    img: youtube06,
+    alt: '[NiziU LOG] NiziU School #1',
+  },
+  {
+    url: 'https://youtu.be/zoPtbRE5d3c',
+    badge: 'NiziU LOG',
+    img: youtube07,
+    alt: '[NiziU LOG] #12 NiziUの休日',
+  },
+  {
+    url: 'https://youtu.be/SFf7Hump8pQ',
+    badge: 'MV',
+    img: youtube08,
+    alt: 'NiziU(니쥬) 5th Single「Paradise」M/V',
+  },
+  {
+    url: 'https://youtu.be/YetOEQd8y5E',
+    badge: 'To.NiziU',
+    img: youtube09,
+    alt: 'To.NiziU EP9 MAYUKA&RIMA',
+  },
+];
+
+const officialSNSaccounts = [
+  {
+    url: 'https://www.instagram.com/niziu_info_official/',
+    img: instagram,
+    alt: 'NiziU @niziu_info_official | Instagram',
+  },
+  {
+    url: 'https://www.tiktok.com/@niziu_official',
+    img: tiktok,
+    alt: 'NiziU @niziu_official | Tiktok',
+  },
+  {
+    url: 'https://twitter.com/NiziU__official',
+    img: twitter,
+    alt: 'NiziU @NiziU__official | Twitter',
+  },
+  { url: 'https://lin.ee/XNJHkof', img: line, alt: 'NiziU Official | LINE' },
+  {
+    url: 'https://www.facebook.com/NiziUinfoofficial',
+    img: facebook,
+    alt: 'NiziU Official | facebook',
+  },
+];
 
 export default function Home() {
   return (
@@ -65,7 +167,9 @@ export default function Home() {
           priority
         />
         <div className={styles.mainVisualIntroduction}>
-          <p className={styles.text}>本サイトはNiziU RIMA非公式ファンサイトです。</p>
+          <p className={styles.text}>
+            本サイトはNiziU RIMA非公式ファンサイトです。
+          </p>
           <p className={styles.text}>WithUにて運営しております。</p>
         </div>
       </div>
@@ -133,34 +237,21 @@ export default function Home() {
         </figure>
         <div className={styles.rimaInformation}>
           <p>
-            ソニーミュージック・JYP合同オーディションプロジェクト「Nizi Project」より1万人の中から選ばれ構成されたガールズグループ「NiziU」のメンバーの一人。
+            ソニーミュージック・JYP合同オーディションプロジェクト「Nizi
+            Project」より1万人の中から選ばれ構成されたガールズグループ「NiziU」のメンバーの一人。
           </p>
           <p>
             RIMAは主にラップを担当。時にラップを作詞する本格派。また、日本語と英語、韓国語が堪能で世界へ発信する要となっています。
           </p>
           <div className={styles.rimaProfile}>
-            <dl className={styles.profileItem}>
-              <dt className={styles.profileBadge}>NAME</dt>
-              <dd className={styles.profileDetail}>RIMA NAKABAYASHI</dd>
-            </dl>
-            <dl className={styles.profileItem}>
-              <dt className={styles.profileBadge}>COLOR</dt>
-              <dd className={styles.profileDetail}>PANTONE® 200C</dd>
-            </dl>
-            <dl className={styles.profileItem}>
-              <dt className={styles.profileBadge}>GREETING</dt>
-              <dd className={styles.profileDetail}>NiziUの魅力的なボイス</dd>
-            </dl>
-            <dl className={styles.profileItem}>
-              <dt className={styles.profileBadge}>BORN</dt>
-              <dd className={styles.profileDetail}>March 26th, 2004</dd>
-            </dl>
-            <dl className={styles.profileItem}>
-              <dt className={styles.profileBadge}>NIZOO*</dt>
-              <dd className={styles.profileDetail}>
-                Llanu<span>*NiziU Official Characters</span>
-              </dd>
-            </dl>
+            {rimaProfileItems.map((item, index) => {
+              return (
+                <dl className={styles.profileItem} key={index}>
+                  <dt className={styles.profileBadge}>{item.badge}</dt>
+                  <dd className={styles.profileDetail}>{item.detail}</dd>
+                </dl>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -200,54 +291,22 @@ export default function Home() {
           />
         </div>
         <div className={styles.rimaIsLovelyItemsContainer}>
-          <dl className={styles.rimaIsLovelyItem}>
-            <dt>
-              <Image
-                src={rimaIsLovelyCreative}
-                alt="Creative"
-                sizes="100vw"
-                className={styles.rimaIsLovelyItemImage}
-                priority
-              />
-            </dt>
-            <dd>
-              RIMAは他にはない独特な感性の持ち主。
-              ラップを作詞するだけではなく、キャラクターを描いたり、独自の言語を作ったりとクリエイティブ。
-              NiziUメンバーやWithUに発信して浸透させる力もあるのも彼女のすごいところ。
-            </dd>
-          </dl>
-          <dl className={styles.rimaIsLovelyItem}>
-            <dt>
-              <Image
-                src={rimaIsLovelyDiligent}
-                alt="Diligent"
-                sizes="100vw"
-                className={styles.rimaIsLovelyItemImage}
-                priority
-              />
-            </dt>
-            <dd>
-              「ラップ」「美貌」だけではないのがRIMA。
-              プライベートでは勉強にとても熱心に取り組んでいます。
-              それはNIziUメンバーが評するほど。NiziUの活動や練習がある中、勉強に時間を割いているストイックな一面があります。
-            </dd>
-          </dl>
-          <dl className={styles.rimaIsLovelyItem}>
-            <dt>
-              <Image
-                src={rimaIsLovelyFriendly}
-                alt="Friendly"
-                sizes="100vw"
-                className={styles.rimaIsLovelyItemImage}
-                priority
-              />
-            </dt>
-            <dd>
-              美貌の裏は甘えん坊で可愛らしいRIMA。
-              人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性も人を惹き寄せていると思います。
-              美と愛嬌の絶妙なギャップさがRIMAの一つの魅力。
-            </dd>
-          </dl>
+          {rimaIsLovelyItems.map((item, index) => {
+            return (
+              <dl className={styles.rimaIsLovelyItem} key={index}>
+                <dt>
+                  <Image
+                    src={item.heading}
+                    alt={item.alt}
+                    sizes="100vw"
+                    className={styles.rimaIsLovelyItemImage}
+                    priority
+                  />
+                </dt>
+                <dd>{item.description}</dd>
+              </dl>
+            );
+          })}
         </div>
       </section>
 
@@ -289,122 +348,21 @@ export default function Home() {
           />
         </h2>
         <ul className={styles.youtubeList} role="list">
-          {
-            youtubeVideos.map((youtubeVideo, index) => {
-              return (
-                <li className={styles.item} key={index}>
-                  <a href={youtubeVideo.url} target="_blank">
-                    <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
-                    <Image
-                      src={youtubeVideo.img}
-                      alt={youtubeVideo.alt}
-                      sizes="100vw"
-                      priority
-                    />
-                  </a>
-                </li>
-              )
-            })
-          }
-          <li className={styles.item}>
-            <a href="https://youtu.be/7FzqKhvgmVY" target="_blank">
-              <span className={styles.itemBadge}>To.NiziU</span>
-              <Image
-                src={youtube01}
-                alt="To.NiziU EP3 RIMA&NINA"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/WXY0uGNi-IA" target="_blank">
-              <span className={styles.itemBadge}>Teaser</span>
-              <Image
-                src={youtube02}
-                alt="NiziU 3rd Single『CLAP CLAP』 RIMA Solo Teaser"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/hHVcOjdQrhs" target="_blank">
-              <span className={styles.itemBadge}>NiziU LOG</span>
-              <Image
-                src={youtube03}
-                alt="[NiziU LOG] #33 ミニゲームセンター"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/nCjmXHsRJNY" target="_blank">
-              <span className={styles.itemBadge}>MV</span>
-              <Image
-                src={youtube04}
-                alt="NiziU(니쥬) 1st Album 「Chopstick」 MV"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/M6cfYVKldNk" target="_blank">
-              <span className={styles.itemBadge}>NiziU LOG</span>
-              <Image
-                src={youtube05}
-                alt="[NiziU LOG] #9 Tell us! RIMA"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/YrUEPI2Fu8E" target="_blank">
-              <span className={styles.itemBadge}>NiziU LOG</span>
-              <Image
-                src={youtube06}
-                alt="[NiziU LOG] NiziU School #1"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/zoPtbRE5d3c" target="_blank">
-              <span className={styles.itemBadge}>NiziU LOG</span>
-              <Image
-                src={youtube07}
-                alt="[NiziU LOG] #12 NiziUの休日"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/SFf7Hump8pQ" target="_blank">
-              <span className={styles.itemBadge}>MV</span>
-              <Image
-                src={youtube08}
-                alt="NiziU(니쥬) 5th Single「Paradise」M/V"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
-          <li className={styles.item}>
-            <a href="https://youtu.be/YetOEQd8y5E" target="_blank">
-              <span className={styles.itemBadge}>To.NiziU</span>
-              <Image
-                src={youtube09}
-                alt="To.NiziU EP9 MAYUKA&RIMA"
-                sizes="100vw"
-                priority
-              />
-            </a>
-          </li>
+          {youtubeVideos.map((youtubeVideo, index) => {
+            return (
+              <li className={styles.item} key={index}>
+                <a href={youtubeVideo.url} target="_blank">
+                  <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
+                  <Image
+                    src={youtubeVideo.img}
+                    alt={youtubeVideo.alt}
+                    sizes="100vw"
+                    priority
+                  />
+                </a>
+              </li>
+            );
+          })}
         </ul>
       </section>
 
@@ -446,77 +404,21 @@ export default function Home() {
             </li>
           </ul>
           <ul className={styles.officialSNSList} role="list">
-            <li>
-              <a
-                href="https://www.instagram.com/niziu_info_official/"
-                target="_blank"
-                rel="noopener"
-              >
-                <Image
-                  src={instagram}
-                  alt="NiziU @niziu_info_official | Instagram"
-                  sizes="100vw"
-                  className={styles.snsImage}
-                  priority
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tiktok.com/@niziu_official"
-                target="_blank"
-                rel="noopener"
-              >
-                <Image
-                  src={tiktok}
-                  alt="NiziU @niziu_official | Tiktok"
-                  sizes="100vw"
-                  className={styles.snsImage}
-                  priority
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://twitter.com/NiziU__official"
-                target="_blank"
-                rel="noopener"
-              >
-                <Image
-                  src={twitter}
-                  alt="NiziU @NiziU__official | Twitter"
-                  sizes="100vw"
-                  className={styles.snsImage}
-                  priority
-                />
-              </a>
-            </li>
-            <li>
-              <a href="https://lin.ee/XNJHkof" target="_blank" rel="noopener">
-                <Image
-                  src={line}
-                  alt="NiziU Official | LINE"
-                  sizes="100vw"
-                  className={styles.snsImage}
-                  priority
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com/NiziUinfoofficial"
-                target="_blank"
-                rel="noopener"
-              >
-                <Image
-                  src={facebook}
-                  alt="NiziU Official | facebook"
-                  sizes="100vw"
-                  className={styles.snsImage}
-                  priority
-                />
-              </a>
-            </li>
+            {officialSNSaccounts.map((account, index) => {
+              return (
+                <li key={index}>
+                  <a href={account.url} target="_blank" rel="noopener">
+                    <Image
+                      src={account.img}
+                      alt={account.alt}
+                      sizes="100vw"
+                      className={styles.snsImage}
+                      priority
+                    />
+                  </a>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
