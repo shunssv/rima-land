@@ -1,0 +1,40 @@
+@use '@/styles/media-query' as m;
+
+.youtubeList {
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 4%;
+  
+  @include m.mq(tabAndPc) {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, auto);
+  }
+  @include m.mq(pc) {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+
+  .item {
+    box-shadow: var(--box-shadow);
+    position: relative;
+
+    .itemBadge {
+      background-color: #c2283c;
+      color: #fff;
+      display: inline-block;
+      font-weight: bold;
+      padding: 0.25em 1em;
+      position: absolute;
+      right: 2%;
+      top: 3%;
+      
+      @include m.mq(sp) {
+        border-radius: 13px;
+        font-size: 0.75rem;
+      }
+      @include m.mq(tabAndPc) {
+        border-radius: 14px;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}

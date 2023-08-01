@@ -5,15 +5,6 @@ import { HomeLayout } from '@/components/Layout/HomeLayout';
 import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import {
   mainVisual,
-  youtube01,
-  youtube02,
-  youtube03,
-  youtube04,
-  youtube05,
-  youtube06,
-  youtube07,
-  youtube08,
-  youtube09,
   learnHerMore,
   instagram,
   tiktok,
@@ -40,6 +31,7 @@ import {
   rimaIsLovely,
   rimaIsLovelyBecause,
 } from '@/assets/';
+import YoutubeList from '@/components/YoutubeList';
 
 const rimaProfileItems = [
   { badge: 'NAME', detail: 'RIMA' },
@@ -67,63 +59,6 @@ const rimaIsLovelyItems = [
     alt: 'Friendly',
     description:
       '美貌の裏は甘えん坊で可愛らしいRIMA。人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性も人を惹き寄せていると思います。美と愛嬌の絶妙なギャップさがRIMAの一つの魅力。',
-  },
-];
-
-const youtubeVideos = [
-  {
-    url: 'https://youtu.be/7FzqKhvgmVY',
-    badge: 'To.NiziU',
-    img: youtube01,
-    alt: 'To.NiziU EP3 RIMA&NINA',
-  },
-  {
-    url: 'https://youtu.be/WXY0uGNi-IA',
-    badge: 'Teaser',
-    img: youtube02,
-    alt: 'NiziU 3rd Single『CLAP CLAP』 RIMA Solo Teaser',
-  },
-  {
-    url: 'https://youtu.be/hHVcOjdQrhs',
-    badge: 'NiziU LOG',
-    img: youtube03,
-    alt: '[NiziU LOG] #33 ミニゲームセンター',
-  },
-  {
-    url: 'https://youtu.be/nCjmXHsRJNY',
-    badge: 'MV',
-    img: youtube04,
-    alt: 'NiziU(니쥬) 1st Album 「Chopstick」 MV',
-  },
-  {
-    url: 'https://youtu.be/M6cfYVKldNk',
-    badge: 'NiziU LOG',
-    img: youtube05,
-    alt: '[NiziU LOG] #9 Tell us! RIMA',
-  },
-  {
-    url: 'https://youtu.be/YrUEPI2Fu8E',
-    badge: 'NiziU LOG',
-    img: youtube06,
-    alt: '[NiziU LOG] NiziU School #1',
-  },
-  {
-    url: 'https://youtu.be/zoPtbRE5d3c',
-    badge: 'NiziU LOG',
-    img: youtube07,
-    alt: '[NiziU LOG] #12 NiziUの休日',
-  },
-  {
-    url: 'https://youtu.be/SFf7Hump8pQ',
-    badge: 'MV',
-    img: youtube08,
-    alt: 'NiziU(니쥬) 5th Single「Paradise」M/V',
-  },
-  {
-    url: 'https://youtu.be/YetOEQd8y5E',
-    badge: 'To.NiziU',
-    img: youtube09,
-    alt: 'To.NiziU EP9 MAYUKA&RIMA',
   },
 ];
 
@@ -347,23 +282,7 @@ export default function Home() {
             priority
           />
         </h2>
-        <ul className={styles.youtubeList} role="list">
-          {youtubeVideos.map((youtubeVideo, index) => {
-            return (
-              <li className={styles.item} key={index}>
-                <a href={youtubeVideo.url} target="_blank">
-                  <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
-                  <Image
-                    src={youtubeVideo.img}
-                    alt={youtubeVideo.alt}
-                    sizes="100vw"
-                    priority
-                  />
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <YoutubeList />
       </section>
 
       <BlackCheckeredPattern />
