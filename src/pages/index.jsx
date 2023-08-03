@@ -32,14 +32,7 @@ import {
   rimaIsLovelyBecause,
 } from '@/assets/';
 import YoutubeList from '@/components/YoutubeList';
-
-const rimaProfileItems = [
-  { badge: 'NAME', detail: 'RIMA' },
-  { badge: 'COLOR', detail: 'PANTONE® 200C' },
-  { badge: 'GREETING', detail: 'NiziUの魅力的なボイス' },
-  { badge: 'BORN', detail: 'March 26th, 2004' },
-  { badge: 'NIZOO*', detail: 'Llanu *NiziU Official Characters' },
-];
+import RimaProfile from '@/components/RimaProfile';
 
 const rimaIsLovelyItems = [
   {
@@ -178,16 +171,7 @@ export default function Home() {
           <p>
             RIMAは主にラップを担当。時にラップを作詞する本格派。また、日本語と英語、韓国語が堪能で世界へ発信する要となっています。
           </p>
-          <div className={styles.rimaProfile}>
-            {rimaProfileItems.map((item, index) => {
-              return (
-                <dl className={styles.profileItem} key={index}>
-                  <dt className={styles.profileBadge}>{item.badge}</dt>
-                  <dd className={styles.profileDetail}>{item.detail}</dd>
-                </dl>
-              );
-            })}
-          </div>
+          <RimaProfile />
         </div>
       </section>
 
