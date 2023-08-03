@@ -1,0 +1,34 @@
+@use '@/styles/media-query' as m;
+
+.rimaProfile {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-top: 2em;
+  
+  .profileItem {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+  }
+
+  .profileBadge {
+    background-color: #c2283c;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    max-width: 100px;
+    padding: 0.25em 1em;
+    text-align: center;
+    width: 100%;
+
+    @include m.mq(sp) {
+      border-radius: 15px;
+      font-size: 0.75rem;
+    }
+    @include m.mq(tabAndPc) {
+      border-radius: 14px;
+      font-size: 0.875rem;
+    }
+  }
+}
