@@ -1,0 +1,22 @@
+@use '@/styles/media-query' as m;
+
+.officialSNSList {
+  column-gap: 15px;
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+
+  @include m.mq(tabAndPc) {
+    column-gap: 45px;
+  }
+  @include m.mq(tab) {
+    margin-top: 10%;
+  }
+  @include m.mq(pc) {
+    margin-top: 6%;
+  }
+
+  .snsImage {
+    width: 50px;
+  }
+}

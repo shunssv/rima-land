@@ -6,11 +6,6 @@ import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import {
   mainVisual,
   learnHerMore,
-  instagram,
-  tiktok,
-  twitter,
-  line,
-  facebook,
   niziu,
   withu,
   official,
@@ -33,6 +28,7 @@ import {
 } from '@/assets/';
 import YoutubeList from '@/components/YoutubeList';
 import RimaProfile from '@/components/RimaProfile';
+import OfficialSNSList from '@/components/OfficialSNSList';
 
 const rimaIsLovelyItems = [
   {
@@ -52,30 +48,6 @@ const rimaIsLovelyItems = [
     alt: 'Friendly',
     description:
       '美貌の裏は甘えん坊で可愛らしいRIMA。人懐っこく、周りを笑顔にしてくれる性格です。怖がりで涙もろいところもあり、そんな意外性も人を惹き寄せていると思います。美と愛嬌の絶妙なギャップさがRIMAの一つの魅力。',
-  },
-];
-
-const officialSNSaccounts = [
-  {
-    url: 'https://www.instagram.com/niziu_info_official/',
-    img: instagram,
-    alt: 'NiziU @niziu_info_official | Instagram',
-  },
-  {
-    url: 'https://www.tiktok.com/@niziu_official',
-    img: tiktok,
-    alt: 'NiziU @niziu_official | Tiktok',
-  },
-  {
-    url: 'https://twitter.com/NiziU__official',
-    img: twitter,
-    alt: 'NiziU @NiziU__official | Twitter',
-  },
-  { url: 'https://lin.ee/XNJHkof', img: line, alt: 'NiziU Official | LINE' },
-  {
-    url: 'https://www.facebook.com/NiziUinfoofficial',
-    img: facebook,
-    alt: 'NiziU Official | facebook',
   },
 ];
 
@@ -306,23 +278,7 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <ul className={styles.officialSNSList} role="list">
-            {officialSNSaccounts.map((account, index) => {
-              return (
-                <li key={index}>
-                  <a href={account.url} target="_blank" rel="noopener">
-                    <Image
-                      src={account.img}
-                      alt={account.alt}
-                      sizes="100vw"
-                      className={styles.snsImage}
-                      priority
-                    />
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          <OfficialSNSList />
         </div>
       </section>
     </>
