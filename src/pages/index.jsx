@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
 import { HomeLayout } from '@/components/Layout/HomeLayout';
-import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import {
   mainVisual,
   learnHerMore,
@@ -26,6 +25,7 @@ import {
   rimaIsLovely,
   rimaIsLovelyBecause,
 } from '@/assets/';
+import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import YoutubeList from '@/components/YoutubeList';
 import RimaProfile from '@/components/RimaProfile';
 import OfficialSNSList from '@/components/OfficialSNSList';
