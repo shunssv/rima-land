@@ -1,0 +1,58 @@
+@use '@/styles/media-query' as m;
+
+.rimaIsLovelyItemsContainer {
+  display: block;
+  padding: 10px 0;
+  
+  @include m.mq(tabAndPc) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @include m.mq(pc) {
+    margin-bottom: 100px;
+    padding: 0;
+  }
+
+  .rimaIsLovelyItem {
+    align-items: center;
+    background: url('../../assets/home-rima-is-lovely-background.svg') center / 90% no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    padding: 55px 10%;
+
+    @include m.mq(tab) {
+      flex-basis: 45%;
+      padding: 76px 30px;
+    }
+    @include m.mq(pc) {
+      flex-basis: calc(100% / 3);
+      height: 100%;
+      line-height: 2;
+      padding: 140px 76px;
+    }
+
+    &:not(:first-of-type) {
+      margin-top: 20px;
+
+      @include m.mq(tabAndPc) {
+        margin-top: 0;
+      }
+    }
+    
+    &:last-of-type {
+      margin-bottom: 40px;
+    }
+
+    .rimaIsLovelyItemImage {
+      margin: 0 auto 20px;
+      width: 90%;
+    }
+
+    dd {
+      color: var(--font-color-white);
+      text-align: center;
+    }
+  }
+}
