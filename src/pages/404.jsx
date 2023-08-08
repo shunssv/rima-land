@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { MdArrowForwardIos } from 'react-icons/md';
 import { Layout } from '@/components/Layout';
 import titleImage from '@/assets/404.svg';
+import ButtonArrowRight from '@/components/ButtonArrowRight';
 
 export default function Custom404() {
   return (
@@ -30,10 +31,7 @@ export default function Custom404() {
           <br />
           URLが変更されているか、もしくはページが存在しません。
         </p>
-        <Link href="/" className={styles.buttonArrowRight}>
-          Keep browsing
-          <MdArrowForwardIos className={styles.icon} />
-        </Link>
+        <ButtonArrowRight url="/" text="Keep browsing" />
       </section>
     </>
   );
