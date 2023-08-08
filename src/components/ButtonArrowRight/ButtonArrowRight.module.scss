@@ -1,0 +1,19 @@
+@use '@/styles/media-query' as m;
+
+.buttonArrowRight {
+  background-color: var(--background-color-red);
+  color: var(--font-color-white);
+  display: block;
+  margin: 0 auto;
+  max-width: 250px;
+  padding: 1em 3em;
+  position: relative;
+  text-align: center;
+
+  .icon {
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
