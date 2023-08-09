@@ -27,6 +27,7 @@ import YoutubeList from '@/components/YoutubeList';
 import RimaProfile from '@/components/RimaProfile';
 import OfficialSNSList from '@/components/OfficialSNSList';
 import RimaIsLovelyItems from '@/components/RimaIsLovelyItems';
+import RedCheckeredPattern from '@/components/RedCheckeredPattern';
 
 export default function Home() {
   return (
@@ -125,13 +126,7 @@ export default function Home() {
       </section>
 
       <div className={styles.redCheckeredPatternContainer}>
-        <Image
-          src={redCheckeredPattern}
-          alt="Red checkered pattern image"
-          sizes="100vw"
-          className={`${styles.redCheckeredPattern}`}
-          priority
-        />
+        <RedCheckeredPattern />
       </div>
 
       <section className={styles.rimaIsLovelyContainer}>
