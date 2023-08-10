@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import styles from './RedCheckeredPattern.module.scss';
+import styles from './FlippedRedCheckeredPattern.module.scss';
 import { redCheckeredPattern } from '@/assets/';
 
-export default function RedCheckeredPattern() {
+export default function FlippedRedCheckeredPattern() {
   return (
-    <div className={styles.redCheckeredPatternContainer}>
+    <div className={styles.flippedRedCheckeredPatternContainer}>
       <Image
         src={redCheckeredPattern}
         alt="Red checkered pattern image"

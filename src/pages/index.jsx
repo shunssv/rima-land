@@ -28,6 +28,7 @@ import RimaProfile from '@/components/RimaProfile';
 import OfficialSNSList from '@/components/OfficialSNSList';
 import RimaIsLovelyItems from '@/components/RimaIsLovelyItems';
 import RedCheckeredPattern from '@/components/RedCheckeredPattern';
+import FlippedRedCheckeredPattern from '@/components/FlippedRedCheckeredPattern';
 
 export default function Home() {
   return (
@@ -125,9 +126,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.redCheckeredPatternContainer}>
-        <RedCheckeredPattern />
-      </div>
+      <RedCheckeredPattern />
 
       <section className={styles.rimaIsLovelyContainer}>
         <div className={styles.roofWrapper}>
@@ -173,15 +172,7 @@ export default function Home() {
         </div>
       </section>
 
-      <div className={styles.redCheckeredPatternContainerIsFlip}>
-        <Image
-          src={redCheckeredPattern}
-          alt="Red checkered pattern image"
-          sizes="100vw"
-          className={styles.redCheckeredPattern}
-          priority
-        />
-      </div>
+      <FlippedRedCheckeredPattern />
 
       <section className={styles.learnHerMoreContainer}>
         <h2>
