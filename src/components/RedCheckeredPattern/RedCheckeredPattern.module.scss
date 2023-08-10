@@ -3,41 +3,18 @@
 .redCheckeredPatternContainer {
   margin-left: calc(((100vw - 100%) / 2) * -1);
   position: relative;
-}
-
-.redCheckeredPattern {
-  margin-right: auto;
-  position: absolute;
-  left: 0;
-  top: -25px;
-
-  @include m.mq(tab) {
-    top: -50px;
-  }
-  @include m.mq(pc) {
-    top: -150px;
-  }
-}
-
-.redCheckeredPatternContainerIsFlip {
-  margin: 15% calc(((100vw - 100%) / 2) * -1) 0 0;
-  
-  @include m.mq(tab) {
-    margin: 12% calc(((100vw - 100%) / 2) * -1) 0 0;
-  }
-  @include m.mq(pc) {
-    margin: 0 calc(((100vw - 100%) / 2) * -1) 0 0;
-    position: relative;
-  }
   
   .redCheckeredPattern {
-    margin-left: auto;
-    transform: scale(-1,1);
-
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    top: -25px;
+  
+    @include m.mq(tab) {
+      top: -50px;
+    }
     @include m.mq(pc) {
-      position: absolute;
-      right: 0;
-      top: 145px;
+      top: -150px;
     }
   }
 }
