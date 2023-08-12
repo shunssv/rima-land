@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Home.module.scss';
+import { MdHighlightOff } from "react-icons/md";
 import { HomeLayout } from '@/components/Layout/HomeLayout';
 import {
   mainVisual,
@@ -9,7 +10,6 @@ import {
   withu,
   official,
   rimania,
-  redCheckeredPattern,
   whoRima,
   is,
   wheelBackground,
@@ -185,6 +185,10 @@ export default function Home() {
           />
         </h2>
         <YoutubeList />
+        <div className={styles.youtubeModalWindow}>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/BqB_eWydtrI" title="YouTube video  player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <MdHighlightOff />
+        </div>
       </section>
 
       <BlackCheckeredPattern />
