@@ -288,6 +288,34 @@
   }
 }
 
+.youtubeModalWindowContainer {
+  position: fixed;
+  z-index: 99;
+  inset: 0;
+  background-color: rgba(0,0,0,0.8);
+
+  .youtubeModalWindowClose {
+    color: var(--font-color-white);
+    font-size: 2rem;
+    margin-left: auto;
+    margin: 5% 5% 0 auto;
+  }
+
+  .youtubeModalWindow {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+
+    .youtubeContent {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 .officialContainer {
   height: 1150px;
   margin: 60px calc(((100vw - 100%) / 2) * -1);
