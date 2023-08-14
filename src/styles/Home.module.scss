@@ -293,12 +293,24 @@
   z-index: 99;
   inset: 0;
   background-color: rgba(0,0,0,0.8);
+  padding-top: 10%;
+
+  @include m.mq(pc) {
+    padding-top: 0;
+  }
 
   .youtubeModalWindowClose {
     color: var(--font-color-white);
     font-size: 2rem;
-    margin-left: auto;
-    margin: 5% 5% 0 auto;
+    margin: 0 5% 5% auto;
+
+    @include m.mq(tab) {
+      margin: 2% 10% 4% auto;
+    }
+    @include m.mq(pc) {
+      margin: 2% 10% 2% auto;
+      padding-top: 0;
+    }
   }
 
   .youtubeModalWindow {
@@ -308,10 +320,16 @@
 
     .youtubeContent {
       position: absolute;
-      top: 50%;
-      left: 0;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 100%;
       height: 100%;
+
+      @include m.mq(tabAndPc) {
+        width: 80%;
+        height: 80%;
+      }
     }
   }
 }
