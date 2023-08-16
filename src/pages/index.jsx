@@ -21,7 +21,6 @@ import {
   rimaIsLovelyRoof,
   rimaIsLovely,
   rimaIsLovelyBecause,
-  youtube05,
 } from '@/assets/';
 import BlackCheckeredPattern from '@/components/BlackCheckeredPattern';
 import YoutubeList from '@/components/YoutubeList';
@@ -186,23 +185,6 @@ export default function Home() {
           />
         </h2>
         <YoutubeList />
-        <div className={styles.youtubeModalWindowContainer}>
-          <figure className={styles.youtubeModalWindowCloseWrapper}>
-            <IoCloseCircleSharp className={styles.youtubeModalWindowClose} />
-          </figure>
-          <div className={styles.youtubeModalWindow}>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/BqB_eWydtrI"
-              title="YouTube video  player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              className={styles.youtubeContent}
-            ></iframe>
-          </div>
-        </div>
       </section>
 
       <BlackCheckeredPattern />

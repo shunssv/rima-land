@@ -288,52 +288,6 @@
   }
 }
 
-.youtubeModalWindowContainer {
-  position: fixed;
-  z-index: 99;
-  inset: 0;
-  background-color: rgba(0,0,0,0.8);
-  padding-top: 10%;
-
-  @include m.mq(pc) {
-    padding-top: 0;
-  }
-
-  .youtubeModalWindowClose {
-    color: var(--font-color-white);
-    font-size: 2rem;
-    margin: 0 5% 5% auto;
-
-    @include m.mq(tab) {
-      margin: 2% 10% 4% auto;
-    }
-    @include m.mq(pc) {
-      margin: 2% 10% 2% auto;
-      padding-top: 0;
-    }
-  }
-
-  .youtubeModalWindow {
-    position: relative;
-    height: 0;
-    padding-top: 56.25%;
-
-    .youtubeContent {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: 100%;
-
-      @include m.mq(tabAndPc) {
-        width: 80%;
-        height: 80%;
-      }
-    }
-  }
-}
-
 .officialContainer {
   height: 1150px;
   margin: 60px calc(((100vw - 100%) / 2) * -1);
