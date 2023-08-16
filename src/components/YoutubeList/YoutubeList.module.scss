@@ -38,3 +38,49 @@
     }
   }
 }
+
+.youtubeModalWindowContainer {
+  background-color: rgba(0,0,0,0.8);
+  inset: 0;
+  padding-top: 10%;
+  position: fixed;
+  z-index: 99;
+
+  @include m.mq(pc) {
+    padding-top: 0;
+  }
+
+  .youtubeModalWindowClose {
+    color: var(--font-color-white);
+    font-size: 2rem;
+    margin: 0 5% 5% auto;
+
+    @include m.mq(tab) {
+      margin: 2% 10% 4% auto;
+    }
+    @include m.mq(pc) {
+      margin: 2% 10% 2% auto;
+      padding-top: 0;
+    }
+  }
+
+  .youtubeModalWindow {
+    height: 0;
+    padding-top: 56.25%;
+    position: relative;
+
+    .youtubeContent {
+      height: 100%;
+      left: 50%;
+      position: absolute;
+      top: 0;
+      transform: translateX(-50%);
+      width: 100%;
+
+      @include m.mq(tabAndPc) {
+        height: 80%;
+        width: 80%;
+      }
+    }
+  }
+}

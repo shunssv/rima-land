@@ -11,6 +11,7 @@ import {
   youtube08,
   youtube09,
 } from '@/assets/';
+import { IoCloseCircleSharp } from 'react-icons/io5';
 
 const youtubeVideos = [
   {
@@ -84,6 +85,24 @@ export default function YoutubeList() {
                 priority
               />
             </a>
+
+            <div className={styles.youtubeModalWindowContainer}>
+              <figure className={styles.youtubeModalWindowCloseWrapper}>
+                <IoCloseCircleSharp className={styles.youtubeModalWindowClose} />
+              </figure>
+              <div className={styles.youtubeModalWindow}>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/BqB_eWydtrI"
+                  title="YouTube video  player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  className={styles.youtubeContent}
+                ></iframe>
+              </div>
+            </div>
           </li>
         );
       })}
