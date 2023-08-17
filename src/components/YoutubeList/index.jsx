@@ -12,6 +12,7 @@ import {
   youtube09,
 } from '@/assets/';
 import { IoCloseCircleSharp } from 'react-icons/io5';
+import { useState } from 'react';
 
 const youtubeVideos = [
   {
@@ -71,12 +72,14 @@ const youtubeVideos = [
 ];
 
 export default function YoutubeList() {
+  const [isShowing, setIsShowing] = useState(false);
+
   return (
     <ul className={styles.youtubeList} role="list">
       {youtubeVideos.map((youtubeVideo, index) => {
         return (
           <li className={styles.item} key={index}>
-            <a href={youtubeVideo.url} target="_blank">
+            <div onClick={() => setIsShowing(true)}>
               <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
               <Image
                 src={youtubeVideo.img}
@@ -84,25 +87,27 @@ export default function YoutubeList() {
                 sizes="100vw"
                 priority
               />
-            </a>
-
-            <div className={styles.youtubeModalWindowContainer}>
-              <figure className={styles.youtubeModalWindowCloseWrapper}>
-                <IoCloseCircleSharp className={styles.youtubeModalWindowClose} />
-              </figure>
-              <div className={styles.youtubeModalWindow}>
-                <iframe
-                  width="560"
-                  height="315"
-                  src="https://www.youtube.com/embed/BqB_eWydtrI"
-                  title="YouTube video  player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                  className={styles.youtubeContent}
-                ></iframe>
-              </div>
             </div>
+
+            {isShowing && (
+              <div className={styles.youtubeModalWindowContainer}>
+                <IoCloseCircleSharp
+                  className={styles.youtubeModalWindowClose}
+                />
+                <div className={styles.youtubeModalWindow}>
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/BqB_eWydtrI"
+                    title="YouTube video  player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                    className={styles.youtubeContent}
+                  ></iframe>
+                </div>
+              </div>
+            )}
           </li>
         );
       })}
