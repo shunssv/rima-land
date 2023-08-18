@@ -73,6 +73,7 @@ const youtubeVideos = [
 
 export default function YoutubeList() {
   const [isShowing, setIsShowing] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
 
   return (
     <ul className={styles.youtubeList} role="list">
@@ -90,8 +91,8 @@ export default function YoutubeList() {
             </div>
 
             {isShowing && (
-              <div className={styles.youtubeModalWindowContainer}>
-                <IoCloseCircleSharp
+              <div className={styles.youtubeModalWindowContainer} onClick={() => setIsShowing(false)}>
+                <IoCloseCircleSharp onClick={() => setIsShowing(false)}
                   className={styles.youtubeModalWindowClose}
                 />
                 <div className={styles.youtubeModalWindow}>
