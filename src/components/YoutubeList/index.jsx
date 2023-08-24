@@ -73,14 +73,21 @@ const youtubeVideos = [
 
 export default function YoutubeList() {
   const [isShowing, setIsShowing] = useState(false);
-  const [isClosing, setIsClosing] = useState(false);
+  
+  const openModal = () => {
+    setIsShowing(true);
+  }
+
+  const closeModal = () => {
+    setIsShowing(false);
+  }
 
   return (
-    <ul className={styles.youtubeList} role="list">
+    <ul className={styles.youtubeList} role="list" onClick={(e) => e.stopPropagation()}>
       {youtubeVideos.map((youtubeVideo, index) => {
         return (
           <li className={styles.item} key={index}>
-            <div onClick={() => setIsShowing(true)}>
+            <div onClick={openModal}>
               <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
               <Image
                 src={youtubeVideo.img}
@@ -89,29 +96,29 @@ export default function YoutubeList() {
                 priority
               />
             </div>
-
-            {isShowing && (
-              <div className={styles.youtubeModalWindowContainer} onClick={() => setIsShowing(false)}>
-                <IoCloseCircleSharp onClick={() => setIsShowing(false)}
-                  className={styles.youtubeModalWindowClose}
-                />
-                <div className={styles.youtubeModalWindow}>
-                  <iframe
-                    width="560"
-                    height="315"
-                    src={`https://www.youtube.com/embed/${youtubeVideo.id}`}
-                    title="YouTube video  player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen
-                    className={styles.youtubeContent}
-                  ></iframe>
-                </div>
-              </div>
-            )}
           </li>
         );
       })}
+
+      {isShowing && (
+        <div className={styles.youtubeModalWindowContainer} onClick={closeModal}>
+          <IoCloseCircleSharp onClick={closeModal}
+            className={styles.youtubeModalWindowClose}
+          />
+          <div className={styles.youtubeModalWindow}>
+            <iframe
+              width="560"
+              height="315"
+              src={`https://www.youtube.com/embed/${youtubeVideos[index].id}`}
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              className={styles.youtubeContent}
+            ></iframe>
+          </div>
+        </div>
+      )}
     </ul>
   );
 }
