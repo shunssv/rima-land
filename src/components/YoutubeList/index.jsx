@@ -73,10 +73,7 @@ const youtubeVideos = [
 
 export default function YoutubeList() {
   const [isShowing, setIsShowing] = useState(false);
-  
-  const openModal = () => {
-    setIsShowing(true);
-  }
+  const [modalData, setModalData] = useState(null);
 
   const closeModal = () => {
     setIsShowing(false);
@@ -87,7 +84,7 @@ export default function YoutubeList() {
       {youtubeVideos.map((youtubeVideo, index) => {
         return (
           <li className={styles.item} key={index}>
-            <div onClick={openModal}>
+            <div onClick={() => {setIsShowing(true); setModalData(youtubeVideo.id)}}>
               <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
               <Image
                 src={youtubeVideo.img}
@@ -109,7 +106,7 @@ export default function YoutubeList() {
             <iframe
               width="560"
               height="315"
-              src={`https://www.youtube.com/embed/${youtubeVideos[index].id}`}
+              src={`https://www.youtube.com/embed/${modalData}`}
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
