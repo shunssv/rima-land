@@ -17,6 +17,8 @@
     box-shadow: var(--box-shadow);
     position: relative;
 
+    overflow: hidden;
+
     .itemBadge {
       background-color: #c2283c;
       color: #fff;
@@ -35,6 +37,11 @@
         border-radius: 14px;
         font-size: 0.875rem;
       }
+    }
+
+    .itemThumbnail:hover {
+      transform: scale(1.2);
+      transition: transform 0.5s ease-in-out;
     }
   }
 }
@@ -83,4 +90,8 @@
       }
     }
   }
+}
+
+.linkWrapper {
+  cursor: pointer;
 }
