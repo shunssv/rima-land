@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import styles from './YoutubeList.module.scss';
+import animates from '@/styles/_animation.module.scss';
 import {
   youtube01,
   youtube02,
@@ -84,12 +85,13 @@ export default function YoutubeList() {
       {youtubeVideos.map((youtubeVideo, index) => {
         return (
           <li className={styles.item} key={index}>
-            <div onClick={() => {setIsShowing(true); setModalData(youtubeVideo.id)}}>
+            <div className={styles.linkWrapper} onClick={() => {setIsShowing(true); setModalData(youtubeVideo.id)}}>
               <span className={styles.itemBadge}>{youtubeVideo.badge}</span>
               <Image
                 src={youtubeVideo.img}
                 alt={youtubeVideo.alt}
                 sizes="100vw"
+                className={styles.itemThumbnail}
                 priority
               />
             </div>
@@ -98,9 +100,9 @@ export default function YoutubeList() {
       })}
 
       {isShowing && (
-        <div className={styles.youtubeModalWindowContainer} onClick={closeModal}>
+        <div className={`${styles.youtubeModalWindowContainer} ${animates.fadeIn} ${styles.linkWrapper}`} onClick={closeModal}>
           <IoCloseCircleSharp onClick={closeModal}
-            className={styles.youtubeModalWindowClose}
+            className={`${styles.youtubeModalWindowClose} ${styles.linkWrapper}`}
           />
           <div className={styles.youtubeModalWindow}>
             <iframe
