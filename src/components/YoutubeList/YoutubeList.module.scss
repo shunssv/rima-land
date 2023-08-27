@@ -16,7 +16,6 @@
   .item {
     box-shadow: var(--box-shadow);
     position: relative;
-
     overflow: hidden;
 
     .itemBadge {
@@ -39,9 +38,12 @@
       }
     }
 
+    .itemThumbnail {
+      transition: transform 0.5s ease-in-out;
+    }
+
     .itemThumbnail:hover {
       transform: scale(1.2);
-      transition: transform 0.5s ease-in-out;
     }
   }
 }
