@@ -1,8 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '@/styles/Custom404.module.scss';
-import Link from 'next/link';
-import { MdArrowForwardIos } from 'react-icons/md';
 import { Layout } from '@/components/Layout';
 import titleImage from '@/assets/404.svg';
 import ButtonArrowRight from '@/components/ButtonArrowRight';
