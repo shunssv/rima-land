@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Layout } from '@/components/Layout';
 import titleImage from '@/assets/disclaimer.svg';
 
-
 export default function Disclaimer() {
   return (
     <>
