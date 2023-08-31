@@ -18,6 +18,19 @@
     position: relative;
     overflow: hidden;
 
+    // &.linkWrapper {
+    //   transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      
+    //   &:hover {
+    //     .itemBadge {
+    //       opacity: 0;
+    //     }
+    //     .itemThumbnail {
+    //       transform: scale(1.2);
+    //     }
+    //   }
+    // }
+
     .itemBadge {
       background-color: #c2283c;
       color: #fff;
@@ -45,6 +58,8 @@
     .itemThumbnail:hover {
       transform: scale(1.2);
     }
+
+
   }
 }
 
