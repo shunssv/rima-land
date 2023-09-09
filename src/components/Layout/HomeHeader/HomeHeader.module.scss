@@ -1,3 +1,5 @@
+@use '@/styles/media-query' as m;
+
 .headerContainer {
   background-color: rgba(186, 12, 47, 0.8);
   color: var(--font-color-white);
@@ -12,10 +14,16 @@
   position: fixed;
   bottom: 1%;
   right: 1.5%;
-  z-index: 999;
-
+  z-index: 99;
+  pointer-events: none;
+  user-select: none;
+  
   .icon {
-    background-color: rgba(186, 12, 47, 0.8);
-    font-size: 4rem;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 3rem;
+
+    @include m.mq(pc) {
+      font-size: 4rem;
+    }
   }
 }
