@@ -11,12 +11,14 @@
 }
 
 .scrollToTop {
-  position: fixed;
   bottom: 1%;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
   right: 1.5%;
-  z-index: 99;
-  // pointer-events: none;
   user-select: none;
+  visibility: hidden;
+  z-index: 99;
   
   .icon {
     color: rgba(0, 0, 0, 0.8);
@@ -26,4 +28,10 @@
       font-size: 4rem;
     }
   }
+}
+
+.appear {
+  opacity: 0.8 !important;
+  pointer-events: visible !important;
+  visibility: visible !important;
 }
