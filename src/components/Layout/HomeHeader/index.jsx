@@ -11,7 +11,7 @@ export function HomeHeader() {
   });
 
   const handleClick = useCallback((e) => {
-    e.preventDefalt();
+    e.preventDefault();
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
