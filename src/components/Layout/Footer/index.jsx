@@ -13,7 +13,7 @@ export function Footer() {
             rel="noopener noreferrer"
           >
             <Image
-              src="/media-twitter-logo.svg"
+              src="/media-x-logo.svg"
               width={30}
               height={30}
               alt="Twitter"
