@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useCallback } from 'react';
 import { IoIosArrowDropupCircle } from 'react-icons/io';
 
-export function ScrollToTopButton() {
+export function ScrollToTopButton({ appear }) {
   const handleClick = useCallback((e) => {
     e.preventDefault();
     window.scrollTo({
@@ -13,7 +13,12 @@ export function ScrollToTopButton() {
   }, []);
 
   return (
-    <Link  ink href="#" className={`${styles.scrollToTop} ${styles.appear}`} onClick={handleClick}>
+    <Link
+      ink
+      href="#"
+      className={`${styles.scrollToTop} ${appear}`}
+      onClick={handleClick}
+    >
       <IoIosArrowDropupCircle className={styles.icon} />
     </Link>
   );
