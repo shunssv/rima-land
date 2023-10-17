@@ -1,22 +1,12 @@
 import styles from './HomeHeader.module.scss';
 import Link from 'next/link';
-import { useCallback } from 'react';
-import { IoIosArrowDropupCircle } from 'react-icons/io';
 import { useInView } from 'react-intersection-observer';
+import { ScrollToTopButton } from '@/components/ScrollToTopButton';
 
 export function HomeHeader() {
-
   const [ref, inView] = useInView({
     threshold: 0,
   });
-
-  const handleClick = useCallback((e) => {
-    e.preventDefault();
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }, []);
 
   return (
     <>
@@ -26,13 +16,9 @@ export function HomeHeader() {
         </h1>
       </header>
       {inView ? (
-        <Link href="#" className={styles.scrollToTop}>
-          <IoIosArrowDropupCircle className={styles.icon} />
-        </Link>
+        <ScrollToTopButton />
       ) : (
-        <Link href="#" className={`${styles.scrollToTop} ${styles.appear}`} onClick={handleClick}>
-          <IoIosArrowDropupCircle className={styles.icon} />
-        </Link>
+        <ScrollToTopButton appear={styles.appear} />
       )}
     </>
   );

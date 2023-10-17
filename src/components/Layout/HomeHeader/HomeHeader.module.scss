@@ -10,27 +10,6 @@
   width: 100%;
 }
 
-.scrollToTop {
-  bottom: 1%;
-  opacity: 0;
-  pointer-events: none;
-  position: fixed;
-  right: 1.5%;
-  user-select: none;
-  visibility: hidden;
-  transition: opacity var(--transition-speed), visibility var(--transition-speed);
-  z-index: 99;
-  
-  .icon {
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 3rem;
-
-    @include m.mq(pc) {
-      font-size: 4rem;
-    }
-  }
-}
-
 .appear {
   opacity: 0.8 !important;
   pointer-events: visible !important;
