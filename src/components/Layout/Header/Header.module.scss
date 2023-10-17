@@ -2,3 +2,9 @@
   color: var(--font-color-white);
   padding: 1% 2%;
 }
+
+.appear {
+  opacity: 0.8 !important;
+  pointer-events: visible !important;
+  visibility: visible !important;
+}
