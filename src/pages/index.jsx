@@ -33,8 +33,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>WELCOME TO RIMA LAND</title>
-        <meta name="description" content="WELCOME TO RIMA LAND" />
+        <title>WELCOME TO RIMA LAND｜RIMA LAND（リマランド）｜NiziU RIMA非公式ファンサイト</title>
+        <meta name="description" content="NiziU RIMA非公式ファンサイト リマランド（RIMA LAND）。NiziUのRIMAをたくさんの方に知ってほしい想いからファン（WithU）にてサイトを開設。デジタルからRIMAを応援しています。" />
       </Head>
       <div className={styles.mainVisualContainer}>
         <Image
