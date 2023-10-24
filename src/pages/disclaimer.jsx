@@ -9,8 +9,8 @@ export default function Disclaimer() {
   return (
     <>
       <Head>
-        <title>Disclaimer | RIMA LAND</title>
-        <meta name="description" content="Disclaimer" />
+        <title>免責事項｜Disclaimer｜RIMA LAND（リマランド）｜NiziU RIMA非公式ファンサイト</title>
+        <meta name="description" content="NiziU RIMA非公式ファンサイト リマランド（RIMA LAND）。NiziUのRIMAをたくさんの方に知ってほしい想いからファン（WithU）にてサイトを開設。デジタルからRIMAを応援しています。本サイトの免責事項について記載しております。" />
       </Head>
 
       <section className={styles.disclaimerContainer}>
