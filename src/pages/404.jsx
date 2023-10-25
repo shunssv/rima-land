@@ -9,8 +9,8 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>404 page not found | RIMA LAND</title>
-        <meta name="description" content="404 page not found" />
+        <title>404 page not found｜RIMA LAND（リマランド）｜NiziU RIMA非公式ファンサイト</title>
+        <meta name="description" content="NiziU RIMA非公式ファンサイト リマランド（RIMA LAND）。NiziUのRIMAをたくさんの方に知ってほしい想いからファン（WithU）にてサイトを開設。デジタルからRIMAを応援しています。お探しのページが見つかりませんでした。" />
       </Head>
 
       <section className={styles.custom404Container}>
