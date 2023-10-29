@@ -167,7 +167,7 @@ export default function Home() {
           />
         </h2>
         <div className={styles.rimaniaMainContent}>
-          <p>COMING SOON!</p>
+          <p>ただいま開発中...</p>
         </div>
       </section>
 
