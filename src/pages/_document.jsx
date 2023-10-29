@@ -1,4 +1,7 @@
 import { Html, Head, Main, NextScript } from 'next/document'
+import { GoogleTagManagerBelow } from '@/components/Analytics/GoogleTagManagerBelow';
+
+const ENV = process.env.NEXT_PUBLIC_VERCEL_ENV;
 
 export default function Document() {
   return (
@@ -8,6 +11,7 @@ export default function Document() {
         <meta name="twitter:site" content="@RimaLandByWithU" />
       </Head>
       <body>
+        {ENV === 'Production' && <GoogleTagManagerBelow />}
         <Main />
         <NextScript />
       </body>
