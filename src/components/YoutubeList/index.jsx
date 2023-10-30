@@ -29,10 +29,10 @@ const youtubeVideos = [
     alt: 'NiziU 3rd Single『CLAP CLAP』 RIMA Solo Teaser',
   },
   {
-    id: 'hHVcOjdQrhs',
-    badge: 'NiziU LOG',
+    id: '4a9yBZCm0rw',
+    badge: 'Teaser',
     img: youtube03,
-    alt: '[NiziU LOG] #33 ミニゲームセンター',
+    alt: 'NICE TO MeetU, WE NiziU(니쥬)! | RIMA',
   },
   {
     id: 'nCjmXHsRJNY',
@@ -59,10 +59,10 @@ const youtubeVideos = [
     alt: '[NiziU LOG] #12 NiziUの休日',
   },
   {
-    id: 'SFf7Hump8pQ',
-    badge: 'MV',
+    id: 'wwE6qlCG6cM',
+    badge: 'Summer Vacation',
     img: youtube08,
-    alt: 'NiziU(니쥬) 5th Single「Paradise」M/V',
+    alt: 'Study With RIMA',
   },
   {
     id: 'YetOEQd8y5E',
