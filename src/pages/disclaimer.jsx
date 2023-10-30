@@ -5,12 +5,23 @@ import Link from 'next/link';
 import { Layout } from '@/components/Layout';
 import titleImage from '@/assets/disclaimer.svg';
 
+const HEADINFO = {
+  title: '免責事項｜Disclaimer｜RIMA LAND（リマランド）｜NiziU RIMA非公式ファンサイト',
+  description: 'NiziU RIMA非公式ファンサイト リマランド（RIMA LAND）。NiziUのRIMAをたくさんの方に知ってほしい想いからファン（WithU）にてサイトを開設。デジタルからRIMAを応援しています。本サイトの免責事項について記載しております。',
+  image: 'ogp.png'
+}
+
 export default function Disclaimer() {
   return (
     <>
       <Head>
-        <title>免責事項｜Disclaimer｜RIMA LAND（リマランド）｜NiziU RIMA非公式ファンサイト</title>
-        <meta name="description" content="NiziU RIMA非公式ファンサイト リマランド（RIMA LAND）。NiziUのRIMAをたくさんの方に知ってほしい想いからファン（WithU）にてサイトを開設。デジタルからRIMAを応援しています。本サイトの免責事項について記載しております。" />
+        <title>{HEADINFO.title}</title>
+        <meta name="description" content={HEADINFO.description} />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content={process.env.NEXT_PUBLIC_VERCEL_URL} />
+        <meta property="og:title" content={HEADINFO.title} />
+        <meta property="og:description" content={HEADINFO.description} />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_VERCEL_URL}/${HEADINFO.image}`} />
       </Head>
 
       <section className={styles.disclaimerContainer}>
