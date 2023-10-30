@@ -47,7 +47,11 @@
 
     .rimaIsLovelyItemImage {
       margin: 0 auto 20px;
-      width: 90%;
+      width: 70%;
+
+      @include m.mq(tabAndPc) {
+        width: 90%;
+      }
     }
 
     dd {

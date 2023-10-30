@@ -2,6 +2,7 @@ $breakpoints: (
   sp: '(max-width: 520px)',
   tabAndPc: '(min-width: 521px)',
   tab: '(min-width: 521px) and (max-width: 1180px)',
+  tabLandscape: '(min-width: 1181px) and (max-width: 1366px)',
   pc: '(min-width: 1181px)'
 );
 
