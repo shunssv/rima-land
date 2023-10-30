@@ -69,6 +69,9 @@
       display: flex;
       gap: 0.5em;
     }
+    @include m.mq(tabLandscape) {
+      top: 9%;
+    }
 
     .titleWhoRimaImage {
       @include m.mq(tabAndPc) {
@@ -79,6 +82,9 @@
       }
       @include m.mq(pc) {
         width: 100%;
+      }
+      @include m.mq(tabLandscape) {
+        width: 35vw;
       }
     }
 
@@ -99,20 +105,28 @@
     top: 200px;
 
     @include m.mq(tab) {
-      right: -250px;
-      top: 300px;
+      right: -35%;
+      top: 10%;
     }
     @include m.mq(pc) {
       right: -420px;
       top: -150px;
     }
+    @include m.mq(tabLandscape) {
+      right: -23%;
+      top: 3%;
+    }
 
     .wheelBackground {
+
       @include m.mq(tab) {
         width: 1200px;
       }
       @include m.mq(pc) {
         width: 1348px;
+      }
+      @include m.mq(tabLandscape) {
+        width: 74vw;
       }
     }
 
@@ -279,6 +293,8 @@
   }
 
   .titleImage {
+    position: relative;
+
     @include m.mq(tab) {
       margin: 0 auto;
     }
