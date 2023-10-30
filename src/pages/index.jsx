@@ -29,12 +29,23 @@ import RimaIsLovelyItems from '@/components/RimaIsLovelyItems';
 import RedCheckeredPattern from '@/components/RedCheckeredPattern';
 import FlippedRedCheckeredPattern from '@/components/FlippedRedCheckeredPattern';
 
+const HEADINFO = {
+  title: 'WELCOME TO RIMA LAND｜RIMA LAND（リマランド）｜NiziU RIMA非公式ファンサイト',
+  description: 'NiziU RIMA非公式ファンサイト リマランド（RIMA LAND）。NiziUのRIMAをたくさんの方に知ってほしい想いからファン（WithU）にてサイトを開設。デジタルからRIMAを応援しています。',
+  image: 'ogp.png'
+}
+
 export default function Home() {
   return (
     <>
       <Head>
-        <title>WELCOME TO RIMA LAND｜RIMA LAND（リマランド）｜NiziU RIMA非公式ファンサイト</title>
-        <meta name="description" content="NiziU RIMA非公式ファンサイト リマランド（RIMA LAND）。NiziUのRIMAをたくさんの方に知ってほしい想いからファン（WithU）にてサイトを開設。デジタルからRIMAを応援しています。" />
+        <title>{HEADINFO.title}</title>
+        <meta name="description" content={HEADINFO.description} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={process.env.NEXT_PUBLIC_VERCEL_URL} />
+        <meta property="og:title" content={HEADINFO.title} />
+        <meta property="og:description" content={HEADINFO.description} />
+        <meta property="og:image" content={`${process.env.NEXT_PUBLIC_VERCEL_URL}/${HEADINFO.image}`} />
       </Head>
       <div className={styles.mainVisualContainer}>
         <Image
