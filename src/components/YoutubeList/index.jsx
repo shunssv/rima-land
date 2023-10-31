@@ -11,11 +11,18 @@ import {
   youtube07,
   youtube08,
   youtube09,
+  youtube10,
 } from '@/assets/';
 import { IoCloseCircleSharp } from 'react-icons/io5';
 import { useState } from 'react';
 
 const youtubeVideos = [
+  {
+    id: 'gRfDY9WrGwk',
+    badge: 'MV',
+    img: youtube10,
+    alt: 'NiziU(니쥬) HEARTRIS M/V',
+  },
   {
     id: '7FzqKhvgmVY',
     badge: 'To.NiziU',
