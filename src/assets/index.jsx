@@ -8,6 +8,7 @@ import youtube06 from './youtube06.jpg';
 import youtube07 from './youtube07.jpg';
 import youtube08 from './youtube08.jpg';
 import youtube09 from './youtube09.jpg';
+import youtube10 from './youtube10.jpg';
 import learnHerMore from './home-learnHerMore.svg';
 import instagram from './sns-instagram.svg';
 import tiktok from './sns-tiktok.svg';
@@ -46,6 +47,7 @@ export {
   youtube07,
   youtube08,
   youtube09,
+  youtube10,
   learnHerMore,
   instagram,
   tiktok,
