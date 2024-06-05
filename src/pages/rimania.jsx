@@ -43,6 +43,10 @@ export default function Rimania() {
           リマニア！の概要が入ります。
         </p>
         
+        <p className="text-3xl font-bold underline">
+          Tailwind TEST
+        </p>
+        
       </section>
     </>
   );
