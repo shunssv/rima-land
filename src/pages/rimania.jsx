@@ -47,6 +47,11 @@ export default function Rimania() {
           Tailwind TEST
         </p>
         
+        <button className="btn">
+          <Link href="./disclaimer">
+            Get Started
+          </Link>
+        </button>
       </section>
     </>
   );
