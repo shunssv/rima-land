@@ -308,6 +308,7 @@
   height: 1150px;
   margin: 60px calc(((100vw - 100%) / 2) * -1);
   position: relative;
+  z-index: 1;
   
   @include m.mq(tab) {
     height: 1200px;
